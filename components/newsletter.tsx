@@ -4,7 +4,7 @@ export default function Newsletter() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* CTA box */}
         <div
-          className="relative bg-green-600 py-10 px-8 md:py-16 md:px-12"
+          className="relative bg-black-400 py-10 px-8 md:py-16 md:px-12"
           data-aos="fade-up"
         >
           {/* Background illustration */}
