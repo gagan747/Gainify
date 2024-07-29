@@ -9,7 +9,7 @@ export default function Features() {
 		<p
 		  className='text-lg text-gray-100 mb-8'
 		  style={{ display: 'flex', justifyContent: 'center', textAlign: 'center' }}>
-		  ~ Plans starting with Monthly withdrawals ~
+		   Plans starting with Monthly withdrawals 
 		</p>
 		<div className='grid grid-cols-1 md:grid-cols-4 gap-6 mb-8'>
 		  <div className='bg-white rounded-lg shadow-md p-6 text-center'>
