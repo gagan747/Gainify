@@ -12,7 +12,7 @@ export default function Features() {
 		   Plans starting with Monthly withdrawals 
 		</p>
 		<div className='grid grid-cols-1 md:grid-cols-4 gap-6 mb-8'>
-		  <div className='bg-white rounded-lg shadow-md p-6 text-center'>
+		  <div className='bg-white rounded-lg shadow-md p-6 text-center hover:shadow-[0_0_20px_10px_rgba(34,197,94,0.5)] hover:-translate-y-1 transition-shadow transition-transform duration-300'>
 			<img src='/images/plan1.png' alt='Plan 1' className='mx-auto mb-4' />
 			<h2 className='text-xl font-semibold text-gray-800 mb-2'>Gain at up to</h2>
 			<p className='text-3xl font-bold text-teal-600 mb-4'>15% Monthly returns*</p>
@@ -25,7 +25,7 @@ export default function Features() {
 			<p className='text-xs text-gray-400'>*T&C Apply</p>
 		  </div>
   
-		  <div className='bg-white rounded-lg shadow-md p-6 text-center'>
+		  <div className='bg-white rounded-lg shadow-md p-6 text-center hover:shadow-[0_0_20px_10px_rgba(34,197,94,0.5)] hover:-translate-y-1 transition-shadow transition-transform duration-300'>
 			<img src='/images/plan2.png' alt='Plan 2' className='mx-auto mb-4' />
 			<h2 className='text-xl font-semibold text-gray-800 mb-2'>Gain at up to</h2>
 			<p className='text-3xl font-bold text-teal-600 mb-4'>33.5% returns*</p>
@@ -38,7 +38,7 @@ export default function Features() {
 			<p className='text-xs text-gray-400'>*T&C Apply</p>
 		  </div>
   
-		  <div className='bg-white rounded-lg shadow-md p-6 text-center'>
+		  <div className='bg-white rounded-lg shadow-md p-6 text-center hover:shadow-[0_0_20px_10px_rgba(34,197,94,0.5)] hover:-translate-y-1 transition-shadow transition-transform duration-300'>
 			<img src='/images/plan3.png' alt='Plan 3' className='mx-auto mb-4' />
 			<h2 className='text-xl font-semibold text-gray-800 mb-2'>Grow at up to</h2>
 			<p className='text-3xl font-bold text-teal-600 mb-4'>77.5% returns*</p>
@@ -51,7 +51,7 @@ export default function Features() {
 			<p className='text-xs text-gray-400'>*T&C Apply</p>
 		  </div>
   
-		  <div className='bg-white rounded-lg shadow-md p-6 text-center relative'>
+		  <div className='bg-white rounded-lg shadow-md p-6 text-center relative hover:shadow-[0_0_20px_10px_rgba(34,197,94,0.5)] hover:-translate-y-1 transition-shadow transition-transform duration-300'>
 			<span className='absolute top-0 right-0 bg-green-700 text-white text-xs font-semibold px-2 py-1 rounded-bl-lg'>
 			  RECOMMENDED
 			</span>
@@ -72,5 +72,4 @@ export default function Features() {
 		</button>
 	  </div>
 	);
-  }
-  
+}
