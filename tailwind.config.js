@@ -30,17 +30,6 @@ module.exports = {
           800: "#38379C",
           900: "#262668",
         },
-        // green: {
-        //   100: '#44A17F',
-        //   200: '#E2E1FF',
-        //   300: '#44A17F',
-        //   400: '#44A17F',
-        //   500: '#44A17F',
-        //   600: '#44A17F',
-        //   700: '#44A17F',
-        //   800: '#44A17F',
-        //   900: '#44A17F',
-        // },
         green: {
           100: "#F4F4FF",
           200: "#E2E1FF",
@@ -64,6 +53,7 @@ module.exports = {
           "var(--font-architects-daughter)",
           "sans-serif",
         ],
+        poppins: ["Poppins", "sans-serif"],
       },
       fontSize: {
         xs: "0.75rem",
