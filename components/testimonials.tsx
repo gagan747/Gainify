@@ -15,13 +15,13 @@ export default function Testimonials() {
 
           {/* Image on the right side */}
           <div className='w-full lg:w-1/3 flex justify-center'>
-            <Image
+            {/* <Image
               src="/images/about-us.jpg"
               alt="About Us"
               width={400}
               height={400}
               className="rounded-lg"
-            />
+            /> */}
           </div>
         </div>
 
