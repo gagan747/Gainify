@@ -40,10 +40,11 @@ export default function Zigzag() {
                 className='max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6'
                 data-aos='fade-right'>
                 <div className='md:pr-4 lg:pr-12 xl:pr-16'>
+                <h3 className='h3 mb-3'>Fund Management</h3>
                   <div className='font-architects-daughter text-xl text-green-600 mb-2'>
                     "Greater gains. Smarter investments."
                   </div>
-                  <h3 className='h3 mb-3'>Funds Management</h3>
+                  
                   <p className='text-xl text-gray-400 mb-4'>
                     Discover our tailored investment solutions, designed to maximize
                     returns and provide exceptional financial support:
@@ -107,11 +108,11 @@ export default function Zigzag() {
                 className='max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6'
                 data-aos='fade-left'>
                 <div className='md:pl-4 lg:pl-12 xl:pl-16'>
+                <h3 className='h3 mb-3'>Account Management</h3>
                   <div className='font-architects-daughter text-xl text-green-600 mb-2'>
                     "Greater gains. Smarter investments"
                   </div>
-                  <h3 className='h3 mb-3'>Accounts Management</h3>
-                  <p className='text-xl text-gray-400 mb-4'>
+                   <p className='text-xl text-gray-400 mb-4'>
                     Experience our expert account management services, delivering
                     substantial returns and a profit-sharing model that aligns with your
                     success:
