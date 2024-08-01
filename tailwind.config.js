@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        below900: { max: "899px" }, // Custom breakpoint for max-width 899px
+      },
       colors: {
         gray: {
           100: "#EBF1F5",

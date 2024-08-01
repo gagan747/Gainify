@@ -11,12 +11,12 @@ import Testimonials from "@/components/testimonials";
 
 export default function Home() {
   return (
-			<>
-				<Hero />
-				<Zigzag />
-				<Features />
-				<Testimonials />
-				<Newsletter />
-			</>
-		);
+    <>
+      <Hero />
+      <Zigzag />
+      <Features />
+      <Testimonials />
+      <Newsletter />
+    </>
+  );
 }
