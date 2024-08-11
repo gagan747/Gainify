@@ -1,14 +1,15 @@
 'use client';
+//@ts-ignore
 
 import { useState } from 'react';
 import { FaInstagram, FaFacebook, FaWhatsapp, FaTelegramPlane } from 'react-icons/fa';
 
 export default function Contactus() {
 	const [formState, setFormState] = useState({ fullName: '', email: '', phone: '', message: '' });
-	const [error, setError] = useState(null);
-	const [success, setSuccess] = useState(null);
+	const [error, setError] = useState<any>(null);
+	const [success, setSuccess] = useState<any>(null);
 
-	const handleSubmit = async (event) => {
+	const handleSubmit = async (event: any) => {
 		event.preventDefault();
 
 		// Form submission logic goes here
@@ -22,7 +23,7 @@ export default function Contactus() {
 		}
 	};
 
-	const handleChange = (event) => {
+	const handleChange = (event: any) => {
 		setFormState({ ...formState, [event.target.name]: event.target.value });
 	};
 
