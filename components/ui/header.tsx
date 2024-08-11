@@ -101,7 +101,7 @@ export default function Header() {
 								</li>
 								<li>
 									<Link
-										href={'/#'}
+										href={'/contact-us'}
 										className=' text-green-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out'>
 										Contact Us
 									</Link>

@@ -97,7 +97,7 @@ export default function MobileMenu({ isAuthorized }: any) {
 						</li>
 						<li>
 							<Link
-								href='/#services'
+								href='/contact-us'
 								className='flex font-medium w-full  py-2 justify-center'
 								onClick={() => setMobileNavOpen(false)}>
 								Contact Us
