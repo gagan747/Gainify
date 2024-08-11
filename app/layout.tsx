@@ -28,6 +28,9 @@ export default function RootLayout({
   return (
     <Provider store={store}>
       <html lang="en">
+        <head>
+          <title>Gainify</title>
+        </head>
         <body
           className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-gray-900 text-gray-200 tracking-tight`}
         >
