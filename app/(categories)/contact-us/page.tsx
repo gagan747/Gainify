@@ -127,13 +127,13 @@ export default function Contactus() {
 					<a href='https://www.facebook.com/gainifyofficial' target='_blank' rel='noopener noreferrer'>
 						<FaFacebook size={30} />
 					</a>
-					<a href='https://twitter.com/yourusername' target='_blank' rel='noopener noreferrer'>
+					<a href='https://instagram.com/gainifyofficial' target='_blank' rel='noopener noreferrer'>
 						<FaInstagram size={30} />
 					</a>
-					<a href='https://www.linkedin.com/in/yourusername' target='_blank' rel='noopener noreferrer'>
+					<a href='https://api.whatsapp.com/send?phone=917417123998' target='_blank' rel='noopener noreferrer'>
 						<FaWhatsapp size={30} />
 					</a>
-					<a href='https://www.instagram.com/yourusername' target='_blank' rel='noopener noreferrer'>
+					<a href='https://telegram.me/gainifysupport' target='_blank' rel='noopener noreferrer'>
 						<FaTelegramPlane size={30} />
 					</a>
 				</div>
