@@ -22,13 +22,16 @@ export default function SignUp() {
       const password = formData.get("password");
       const fullName = formData.get("fullName");
 
-      const response = await fetch("http://localhost:5000/api/signup", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password, fullName }),
-      });
+      const response = await fetch(
+							`http://${process.env.NEXT_PUBLIC_HOST}/api/signup`,
+							{
+								method: 'POST',
+								headers: {
+									'Content-Type': 'application/json',
+								},
+								body: JSON.stringify({ email, password, fullName }),
+							},
+						);
 
       const data = await response.json();
 
