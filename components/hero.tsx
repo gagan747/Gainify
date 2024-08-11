@@ -72,7 +72,16 @@ export default function Hero() {
 								</div>
 							</div>
 						</div>
-						<div className="flex justify-center">
+						<div className='flex justify-center'>
+							{/* <ModalVideo
+								thumb={VideoThumb}
+								thumbWidth={1024}
+								thumbHeight={576}
+								thumbAlt='Modal video thumbnail'
+								video='/videos/video.mp4'
+								videoWidth={1920}
+								videoHeight={1080}
+							/> */}
 							<Image
 								src='/images/gurmanlandng.jpeg'
 								alt='Loading...'
