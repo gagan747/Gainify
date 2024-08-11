@@ -8,7 +8,6 @@ export default function Loader() {
   const isLoading = useSelector((state: any) => state?.loader?.isLoading); // Get loading state from Redux
 
   useEffect(() => {
-    // Disable scrolling on the body when the loader is active
     if (isLoading) {
       document.body.style.overflow = "hidden";
     } else {
