@@ -23,7 +23,7 @@ export default function SignUp() {
       const fullName = formData.get("fullName");
 
       const response = await fetch(
-							`http://${process.env.NEXT_PUBLIC_HOST}/api/signup`,
+							`${process.env.NEXT_PUBLIC_HOST}/api/signup`,
 							{
 								method: 'POST',
 								headers: {

@@ -18,7 +18,7 @@ export default function SignIn() {
       dispatch({ type: "SHOW_LOADER" }); // Show the loader
 
       const response = await fetch(
-							`http://${process.env.NEXT_PUBLIC_HOST}/api/login`,
+							`${process.env.NEXT_PUBLIC_HOST}/api/login`,
 							{
 								method: 'POST',
 								headers: {
