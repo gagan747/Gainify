@@ -9,6 +9,7 @@ export default function Loader() {
 
   useEffect(() => {
     // Disable scrolling on the body when the loader is active
+    console.log(isLoading)
     if (isLoading) {
       document.body.style.overflow = "hidden";
     } else {

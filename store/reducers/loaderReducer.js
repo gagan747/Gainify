@@ -1,3 +1,5 @@
+import { type } from "os";
+
 // store/reducers/loaderReducer.js
 const initialState = {
   isLoading: true,
@@ -6,9 +8,9 @@ const initialState = {
 const loaderReducer = (state = initialState, action) => {
   switch (action.type) {
     case "SHOW_LOADER":
-      return { ...state, isLoading: true };
+      return { isLoading: true };
     case "HIDE_LOADER":
-      return { ...state, isLoading: false };
+      return { isLoading: false };
     default:
       return state;
   }
