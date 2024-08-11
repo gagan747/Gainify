@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       screens: {
         below900: { max: "899px" }, // Custom breakpoint for max-width 899px
+        below220: { max: "220px" },
       },
       colors: {
         gray: {
