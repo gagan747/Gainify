@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
         {/* Navigation Links */}
         <div className='flex flex-wrap justify-center space-x-6 text-teal-100 mb-4 sm:mb-0 footer-contents'>
-          <Link href='/contact' className='hover:underline'>
+          <Link href='/contact-us' className='hover:underline'>
             Contact Us
           </Link>
           <Link href='/faqs' className='hover:underline'>
