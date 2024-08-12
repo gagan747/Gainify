@@ -7,7 +7,7 @@ export default function FAQ() {
 	const [openItem, setOpenItem] = useState(null);
 
 	// Function to toggle FAQ items
-	const toggleItem = (index) => {
+	const toggleItem = (index :any) => {
 		if (openItem === index) {
 			setOpenItem(null); // Close if it's already open
 		} else {
