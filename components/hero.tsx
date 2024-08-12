@@ -1,8 +1,42 @@
+'use client'
 import VideoThumb from "@/public/images/hero-image-01.jpg";
 import ModalVideo from "@/components/modal-video";
+import { FaWhatsapp, FaTelegramPlane } from 'react-icons/fa';
+
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 export default function Hero() {
+	  const [isModalOpen, setIsModalOpen] = useState(false);
+			const modalRef = useRef<any>(null);
+
+			const openModal = () => {
+				setIsModalOpen(true);
+			};
+
+			const closeModal = () => {
+				setIsModalOpen(false);
+			};
+
+			const handleOutsideClick = (event: any) => {
+				if (modalRef.current && !modalRef.current?.contains(event.target)) {
+					closeModal();
+				}
+			};
+
+			useEffect(() => {
+				if (isModalOpen) {
+					window.addEventListener('mousedown', handleOutsideClick);
+				} else {
+					window.removeEventListener('mousedown', handleOutsideClick);
+				}
+
+				// Cleanup the event listener on component unmount
+				return () => {
+					window.removeEventListener('mousedown', handleOutsideClick);
+				};
+			}, [isModalOpen]);
+			
   return (
 			<section>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 relative'>
@@ -63,10 +97,57 @@ export default function Hero() {
 										Invest now
 									</a>
 								</div>
-								<div data-aos='fade-up' data-aos-delay='600'>
+								<div
+									data-aos='fade-up'
+									data-aos-delay='600'
+									style={{ position: 'relative' }}>
+									{isModalOpen && (
+										<div
+											ref={modalRef}
+											style={{
+												backgroundColor: '#2e2b2c',
+												borderRadius: '10px',
+												position: 'absolute',
+												top: '-72px',
+												right: '-1rem',
+												padding: '15px 20px',
+												color: 'white',
+												textAlign: 'center',
+											}}>
+											<div
+												style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}>
+												<a
+													href='https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER'
+													target='_blank'
+													rel='noopener noreferrer'>
+													<FaWhatsapp color='white' size={24} />
+												</a>
+												<a
+													href='https://t.me/YOUR_TELEGRAM_USERNAME'
+													target='_blank'
+													rel='noopener noreferrer'>
+													<FaTelegramPlane color='white' size={24} />
+												</a>
+											</div>
+											<div
+												style={{
+													position: 'absolute',
+													bottom: '-14px',
+													left: '-6px',
+													transform: 'rotate(25deg)',
+													width: '0px',
+													height: '0',
+													borderLeft: '9px solid transparent',
+													borderRight: '18px solid transparent',
+													borderTop: '25px solid #2e2b2c',
+												}}
+											/>
+										</div>
+									)}
 									<a
 										className='btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4'
-										href='#0'>
+										href='#0'
+										onClick={openModal}>
 										Learn more
 									</a>
 								</div>
