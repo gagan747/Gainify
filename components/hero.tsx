@@ -103,13 +103,12 @@ export default function Hero() {
 									style={{ position: 'relative' }}>
 									{isModalOpen && (
 										<div
+											className='absolute !right-[3rem] md:!right-[-5rem]'
 											ref={modalRef}
 											style={{
 												backgroundColor: '#2e2b2c',
 												borderRadius: '10px',
-												position: 'absolute',
 												top: '-72px',
-												right: '-1rem',
 												padding: '15px 20px',
 												color: 'white',
 												textAlign: 'center',
