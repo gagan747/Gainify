@@ -9,7 +9,7 @@ export default function Features() {
           textAlign: "center",
         }}
       >
-        Investment Plan According to You
+        Your Personalized Investment Plan
       </h1>
       <p
         className="text-lg text-gray-100 mb-8"

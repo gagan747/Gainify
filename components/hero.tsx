@@ -79,15 +79,14 @@ export default function Hero() {
 						{/* Section header */}
 						<div className='max-w-3xl mx-auto text-center pb-12 md:pb-16'>
 							<h1 className='h1 mb-5' data-aos='fade-up'>
-								Invest today and plan for tomorrow
+							Invest Today, Secure Tomorrow
 							</h1>
 
 							<p
 								className='text-xl text-gray-400 mb-8 mt-2'
 								data-aos='fade-up'
 								data-aos-delay='200'>
-								Let's make your money work for you. You've got goals?? We have
-								solutions.
+								Let’s put your money to work. Got goals? We’ve got the solutions.
 							</p>
 							<div className='max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center'>
 								<div data-aos='fade-up' data-aos-delay='400'>

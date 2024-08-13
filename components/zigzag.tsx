@@ -13,9 +13,7 @@ export default function Zigzag() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">Our Services</h1>
             <p className="text-xl text-gray-400">
-              Explore our comprehensive investment and account management
-              services designed to maximize your returns and provide top-tier
-              financial support.
+            At Gainify, we provide a comprehensive range of fund management services tailored to meet the diverse needs of our clients. With extensive experience in the industry, we have honed our expertise in delivering consistent and superior returns..
             </p>
           </div>
 
@@ -48,8 +46,7 @@ export default function Zigzag() {
                   </div>
 
                   <p className="text-xl text-gray-400 mb-4">
-                    Discover our tailored investment solutions, designed to
-                    maximize returns and provide exceptional financial support:
+                  Discover our bespoke investment solutions, crafted to optimize returns and offer unparalleled financial support:
                   </p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
@@ -61,7 +58,7 @@ export default function Zigzag() {
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
                       <span>
-                        Fund management offering returns from 8% to 220%
+                      Fund Management: Achieve returns ranging from 8% to 220%.
                       </span>
                     </li>
                     <li className="flex items-center mb-2">
@@ -73,7 +70,7 @@ export default function Zigzag() {
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
                       <span>
-                        100% profit retention with monthly withdrawals
+                      100% Profit Retention: Enjoy the full benefits of your investment with the option for monthly withdrawals.
                       </span>
                     </li>
                     <li className="flex items-center">
@@ -85,8 +82,7 @@ export default function Zigzag() {
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
                       <span>
-                        Premier financial support to enhance your investment
-                        experience
+                      Premier Financial Support: Elevate your investment experience with our exceptional services tailored to your needs.
                       </span>
                     </li>
                   </ul>
@@ -125,9 +121,8 @@ export default function Zigzag() {
                     "Greater gains. Smarter investments"
                   </div>
                   <p className="text-xl text-gray-400 mb-4">
-                    Experience our expert account management services,
-                    delivering substantial returns and a profit-sharing model
-                    that aligns with your success:
+                  Maximize your returns with intelligent investing.
+                  Explore our expert account management services, designed to deliver impressive returns with a profit-sharing model that aligns with your success:
                   </p>
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="flex items-center mb-2">
@@ -138,7 +133,7 @@ export default function Zigzag() {
                       >
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>Potential returns of up to 10% monthly</span>
+                      <span>Potential Monthly Returns: Up to 10%.</span>
                     </li>
                     <li className="flex items-center mb-2">
                       <svg
@@ -148,7 +143,7 @@ export default function Zigzag() {
                       >
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span>No upfront fees required</span>
+                      <span>No Upfront Fees: Start investing without any initial costs.</span>
                     </li>
                     <li className="flex items-center">
                       <svg
@@ -159,8 +154,7 @@ export default function Zigzag() {
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
                       <span>
-                        50-50 profit sharing: we only earn when we generate
-                        profits in your account
+                      50-50 Profit Sharing: We only earn when your account grows—sharing in the success we help create.
                       </span>
                     </li>
                   </ul>
