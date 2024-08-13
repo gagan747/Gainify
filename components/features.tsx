@@ -33,7 +33,7 @@ export default function Features() {
             Gain at up to
           </h2>
           <p className="text-3xl font-bold text-teal-600 mb-4">
-            15% Monthly returns*
+            12% Monthly returns*
           </p>
           <div className="flex justify-center items-center text-gray-600 mb-4">
             <i className="mr-2 fa fa-calendar"></i> Monthly lock-in period

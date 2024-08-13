@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useDispatch } from 'react-redux';
+import { FaInstagram, FaFacebook, FaWhatsapp, FaTelegramPlane } from 'react-icons/fa';
 
 export default function Aboutus() {
 	const router = useRouter();
@@ -46,7 +47,7 @@ export default function Aboutus() {
 			//@ts-ignore
 			setError(`Something went wrong: ${err?.toString()}`);
 		} finally {
-			dispatch({ type: 'HIDE_LOADER' }); // Show the loader
+			dispatch({ type: 'HIDE_LOADER' }); // Hide the loader
 		}
 	};
 
@@ -117,6 +118,27 @@ export default function Aboutus() {
 
 						<h2 className='text-2xl font-semibold mt-8'>Join Us on Your Financial Journey</h2>
 						<p>Whether you are just starting your investment journey or looking to take your portfolio to the next level, Gainify is here to help you achieve your financial aspirations. Partner with us, and let’s build a prosperous future together.</p>
+
+						{/* Social Media Section */}
+						<div className='mt-12 text-center'>
+							<h2 className='text-2xl font-bold mb-4'>Follow Us</h2>
+							<p className='mb-4'>Stay connected with us through social media.</p>
+							<div className='flex justify-center space-x-6'>
+								<a href='https://www.facebook.com/gainifyofficial' target='_blank' rel='noopener noreferrer'>
+									<FaFacebook size={30} />
+								</a>
+								<a href='https://instagram.com/gainifyofficial' target='_blank' rel='noopener noreferrer'>
+									<FaInstagram size={30} />
+								</a>
+								<a href='https://api.whatsapp.com/send?phone=917417123998' target='_blank' rel='noopener noreferrer'>
+									<FaWhatsapp size={30} />
+								</a>
+								<a href='https://telegram.me/gainifysupport' target='_blank' rel='noopener noreferrer'>
+									<FaTelegramPlane size={30} />
+								</a>
+							</div>
+						</div>
+						{/* End of Social Media Section */}
 					</div>
 				</div>
 			</div>

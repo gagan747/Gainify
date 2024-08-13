@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { FaInstagram, FaFacebook, FaWhatsapp, FaTelegramPlane } from 'react-icons/fa';
 
 export default function PrivacyPolicy() {
 	return (
@@ -54,6 +55,27 @@ export default function PrivacyPolicy() {
 						<p>If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at <a href='mailto:privacy@gainify.com' className='text-teal-600 hover:underline'>privacy@gainify.com</a>.</p>
 
 						<p className='mt-8'>Thank you for trusting Gainify with your personal information. We are committed to protecting your privacy and ensuring your peace of mind.</p>
+
+						{/* Social Media Section */}
+						<div className='mt-12 text-center'>
+							<h2 className='text-2xl font-bold mb-4'>Follow Us</h2>
+							<p className='mb-4'>Stay connected with us through social media.</p>
+							<div className='flex justify-center space-x-6'>
+								<a href='https://www.facebook.com/gainifyofficial' target='_blank' rel='noopener noreferrer'>
+									<FaFacebook size={30} />
+								</a>
+								<a href='https://instagram.com/gainifyofficial' target='_blank' rel='noopener noreferrer'>
+									<FaInstagram size={30} />
+								</a>
+								<a href='https://api.whatsapp.com/send?phone=917417123998' target='_blank' rel='noopener noreferrer'>
+									<FaWhatsapp size={30} />
+								</a>
+								<a href='https://telegram.me/gainifysupport' target='_blank' rel='noopener noreferrer'>
+									<FaTelegramPlane size={30} />
+								</a>
+							</div>
+						</div>
+						{/* End of Social Media Section */}
 					</div>
 				</div>
 			</div>
