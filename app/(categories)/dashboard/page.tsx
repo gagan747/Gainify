@@ -2,13 +2,13 @@
 
 import dynamic from 'next/dynamic';
 import { Table } from 'react-bootstrap';
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
+import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
 
-// Register the necessary components with Chart.js
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+// Register necessary components with Chart.js
+ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
-// Dynamically import Bar from react-chartjs-2
-const Bar = dynamic(() => import('react-chartjs-2').then(mod => mod.Bar), {
+// Dynamically import Line from react-chartjs-2
+const Line = dynamic(() => import('react-chartjs-2').then(mod => mod.Line), {
   ssr: false, // Ensure this only runs on the client side
 });
 
@@ -20,9 +20,17 @@ export default function TrackRecord() {
       {
         label: 'Users in Last Week',
         data: [6000, 8000, 13000, 10000, 9000, 5000, 7000],
-        backgroundColor: '#00D28E', // Bar color
-        borderRadius: 10, // Rounded bars
-        barThickness: 12,
+        borderColor: '#00D28E', // Line color
+        backgroundColor: 'rgba(0, 210, 142, 0.2)', // Fill under the line
+        pointBackgroundColor: '#ffffff', // Point color
+        pointBorderColor: '#00D28E', // Point border color
+        pointHoverBackgroundColor: '#00D28E', // Point hover color
+        pointHoverBorderColor: '#ffffff', // Point hover border color
+        borderWidth: 3,
+        pointRadius: 5,
+        pointHoverRadius: 8,
+        fill: true, // Fill under the line
+        tension: 0.4, // Line curve tension
       },
     ],
   };
@@ -50,8 +58,8 @@ export default function TrackRecord() {
           </div>
         </div>
 
-        {/* Balance and Sales Sections */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+        {/* Balance, Sales, and New Box Sections */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 text-center">
             <h2 className="text-lg mb-2">Balance</h2>
             <p className="text-4xl font-semibold">$56,874</p>
@@ -62,13 +70,18 @@ export default function TrackRecord() {
             <p className="text-4xl font-semibold">$24,575</p>
             <p className="text-red-500 text-xl">-23%</p>
           </div>
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 text-center">
+            <h2 className="text-lg mb-2">New Metric</h2>
+            <p className="text-4xl font-semibold">Value</p>
+            <p className="text-blue-500 text-xl">Change</p>
+          </div>
         </div>
 
         {/* User Activity Section */}
         <div className="bg-secondary p-6 rounded-lg mb-8">
-          <h2 className="text-lg mb-4">User in The Last Week</h2>
+          <h2 className="text-lg mb-4">Users in The Last Week</h2>
           <div className="h-64">
-            <Bar data={chartData} options={{ maintainAspectRatio: false }} />
+            <Line data={chartData} options={{ maintainAspectRatio: false }} />
           </div>
         </div>
 
