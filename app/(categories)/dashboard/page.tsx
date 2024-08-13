@@ -45,34 +45,24 @@ export default function TrackRecord() {
   return (
     <section className="bg-dark text-light min-h-screen py-8">
       <div className="container mx-auto px-4">
-        {/* Dashboard Header */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold mb-4 md:mb-0">Dashboard</h1>
-          <div className="flex items-center gap-4">
-            <input
-              type="text"
-              placeholder="Search..."
-              className="bg-secondary text-white p-2 rounded-lg w-full md:w-auto"
-            />
-            <button className="bg-yellow-500 text-black py-2 px-4 rounded-lg w-full md:w-auto">Upgrade</button>
-          </div>
-        </div>
+        {/* Portfolio Heading */}
+        <h1 className="text-4xl font-bold mb-8 mt-12">My Portfolio</h1>
 
         {/* Balance, Sales, and New Box Sections */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 text-center">
-            <h2 className="text-lg mb-2">Balance</h2>
-            <p className="text-4xl font-semibold">$56,874</p>
+          <div className="bg-white p-6 rounded-lg shadow-lg text-center border-2 border-green-600" style={{ boxShadow: '0 0 20px rgba(16, 185, 129, 0.6)' }}>
+            <h2 className="text-lg mb-2 text-black">PORTFOLIO VALUE</h2>
+            <p className="text-4xl font-semibold text-black">$56,874</p>
             <p className="text-green-500 text-xl">+17%</p>
           </div>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 text-center">
-            <h2 className="text-lg mb-2">Sales</h2>
-            <p className="text-4xl font-semibold">$24,575</p>
+          <div className="bg-white p-6 rounded-lg shadow-lg text-center border-2 border-green-600" style={{ boxShadow: '0 0 20px rgba(16, 185, 129, 0.6)' }}>
+            <h2 className="text-lg mb-2 text-black">YOUR GAINS</h2>
+            <p className="text-4xl font-semibold text-black">$24,575</p>
             <p className="text-red-500 text-xl">-23%</p>
           </div>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 text-center">
-            <h2 className="text-lg mb-2">New Metric</h2>
-            <p className="text-4xl font-semibold">Value</p>
+          <div className="bg-white p-6 rounded-lg shadow-lg text-center border-2 border-green-600" style={{ boxShadow: '0 0 20px rgba(16, 185, 129, 0.6)' }}>
+            <h2 className="text-lg mb-2 text-black">INVESTMENT</h2>
+            <p className="text-4xl font-semibold text-black">$10,000</p>
             <p className="text-blue-500 text-xl">Change</p>
           </div>
         </div>
