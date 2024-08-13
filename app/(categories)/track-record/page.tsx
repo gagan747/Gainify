@@ -9,13 +9,12 @@ import { Table, Carousel } from 'react-bootstrap';
 Chart.register(CategoryScale, LinearScale, LineElement, PointElement, LineController, Title, Tooltip, Legend);
 
 export default function TrackRecord() {
-	// Sample data for the periodical chart
 	const periodChartData = {
 		labels: ['Monthly', '2 Months', '3 Months', '6 Months', 'Yearly'],
 		datasets: [
 			{
 				label: 'Fund Performance (%)',
-				data: [6, 12, 18, 30, 72],  // Example data
+				data: [8, 16.64, 25.97, 58.69],  // Example data
 				fill: false,
 				backgroundColor: 'rgba(54, 162, 235, 0.4)',
 				borderColor: 'rgba(54, 162, 235, 1)',
@@ -24,7 +23,7 @@ export default function TrackRecord() {
 			},
 			{
 				label: 'Benchmark Performance (%)',
-				data: [5, 10, 15, 25, 60],  // Example data
+				data: [5, 10.25, 15.76, 34.01, 79.59],  // Example data
 				fill: false,
 				backgroundColor: 'rgba(255, 206, 86, 0.4)',
 				borderColor: 'rgba(255, 206, 86, 1)',
@@ -34,7 +33,6 @@ export default function TrackRecord() {
 		],
 	};
 
-	// Sample data for the monthly chart
 	const chartData = {
 		labels: [
 			'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
@@ -43,7 +41,7 @@ export default function TrackRecord() {
 		datasets: [
 			{
 				label: 'Fund Performance (%)',
-				data: [5, 6, 8, 7, 5, 10, 10, 12, 8, 7, 6, 9],
+				data: [5, 6, 8, 7, 5, 10, 10, 12],
 				fill: false,
 				backgroundColor: 'rgba(75,192,192,0.4)',
 				borderColor: 'rgba(75,192,192,1)',
@@ -62,44 +60,47 @@ export default function TrackRecord() {
 		],
 	};
 
-	// Data for the periodical table
 	const periodTableHeaders = ['Period', 'Monthly', '2 Months', '3 Months', '6 Months', 'Yearly'];
-	const periodGainifyPerformance = ['Gainify Performance', '6%', '12%', '18%', '30%', '72%'];
-	const periodBenchmarkPerformance = ['Benchmark Performance', '5%', '10%', '15%', '25%', '60%'];
+	const periodGainifyPerformance = ['Gainify Performance', '8%', '16.64%', '25.97%', '58.69%', '_'];
+	const periodBenchmarkPerformance = ['Benchmark Performance', '5%', '10.25%', '15.76%', '34.01%', '79.59%'];
 
-	// Data for the monthly table
 	const tableHeaders = ['Month', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-	const gainifyPerformance = ['Gainify Performance', '5%', '6%', '8%', '7%', '5%', '10%', '10%', '12%', '8%', '7%', '6%', '9%'];
+	const gainifyPerformance = ['Gainify Performance', '5%', '6%', '8%', '7%', '5%', '10%', '10%', '12%', '_', '_', '_', '_'];
 	const benchmarkPerformance = ['Benchmark Performance', '5%', '5%', '5%', '5%', '5%', '5%', '5%', '5%', '5%', '5%', '5%', '5%'];
 
-	// Sample images for the Myfxbook results section
 	const images = [
-		'/images/myfxbook1.png', // Replace with your actual image paths
+		'/images/myfxbook1.png',
 		'/images/myfxbook2.png',
 		'/images/myfxbook3.png',
 		'/images/myfxbook4.png',
 	];
+	const scrollerImages = [
+		'/images/scroller1.png',
+		'/images/scroller2.png',
+		'/images/scroller3.png',
+		'/images/scroller4.png',
+	];
 
 	return (
-		<section className='relative'>
-			<div className='max-w-6xl mx-auto px-4 sm:px-6'>
-				<div className='pt-32 pb-12 md:pt-40 md:pb-20'>
+		<section className='relative w-full'>
+			<div className='max-w-6xl mx-auto px-4 sm:px-6 w-full'>
+				<div className='pt-32 pb-12 md:pt-40 md:pb-20 w-full'>
 					<h1 className='text-4xl font-bold mb-4 text-center'>Gainify Track Record</h1>
 					<p className='text-center text-lg max-w-prose mx-auto mb-8'>
-						At Gainify, our track record speaks for itself. Over the past year, we have consistently delivered strong returns that outperform the market benchmarks. Below, you can find detailed performance charts and data tables showcasing our achievements.
+						Our results speak volumes. Over the past year, Gainify has consistently outpaced our own benchmarks, delivering impressive returns. Explore the detailed performance charts and data tables below to see our success in action.
 					</p>
 
-					{/* Periodical Chart Section */}
-					<div className='mb-12'>
-						<h2 className='text-2xl font-semibold mb-4 text-center'>Periodical Performance Comparison</h2>
-						<Line data={periodChartData} />
+					<div className='mb-12 w-full'>
+						<h2 className='text-2xl font-semibold mb-4 text-center'>Periodical Performance Comparison 2024</h2>
+						<div className='w-full'>
+							<Line data={periodChartData} />
+						</div>
 					</div>
 
-					{/* Periodical Table Section */}
-					<div className='mb-12'>
-						<h2 className='text-2xl font-semibold mb-4 text-center'>Performance Comparison by Period</h2>
-						<div style={{ overflowX: 'auto' }}>
-							<Table striped bordered hover responsive className='text-center' style={{ minWidth: '100%' }}>
+					<div className='mb-12 w-full'>
+						<h2 className='text-2xl font-semibold mb-4 text-center'>Performance Comparison by Period 2024</h2>
+						<div style={{ overflowX: 'auto' }} className='w-full'>
+							<Table striped bordered hover responsive className='text-center w-full'>
 								<thead>
 									<tr>
 										{periodTableHeaders.map((header, index) => (
@@ -123,17 +124,23 @@ export default function TrackRecord() {
 						</div>
 					</div>
 
-					{/* Monthly Chart Section */}
-					<div className='mb-12'>
-						<h2 className='text-2xl font-semibold mb-4 text-center'>Performance Over the Months</h2>
-						<Line data={chartData} />
+					<div className='mb-12 w-full'>
+						<p className='text-lg max-w-prose mx-auto mb-8'>
+							In our periodical performance analysis, it's evident that we have significantly outperformed our benchmark. Not only have we consistently exceeded the benchmark's returns, but we've also delivered substantial gains for our clients. Our ability to surpass these industry standards reflects the strength of our investment strategies and our commitment to maximizing returns. By staying ahead of the curve and continually optimizing our approach, we provide our clients with the confidence that their investments are in capable hands, yielding impressive results over both short and long-term periods.
+						</p>
 					</div>
 
-					{/* Monthly Table Section */}
-					<div className='mb-12'>
+					<div className='mb-12 w-full'>
+						<h2 className='text-2xl font-semibold mb-4 text-center'>Performance Over the Months</h2>
+						<div className='w-full'>
+							<Line data={chartData} />
+						</div>
+					</div>
+
+					<div className='mb-12 w-full'>
 						<h2 className='text-2xl font-semibold mb-4 text-center'>Monthly Performance Comparison</h2>
-						<div style={{ overflowX: 'auto' }}>
-							<Table striped bordered hover responsive className='text-center' style={{ minWidth: '100%' }}>
+						<div style={{ overflowX: 'auto' }} className='w-full'>
+							<Table striped bordered hover responsive className='text-center w-full'>
 								<thead>
 									<tr>
 										{tableHeaders.map((header, index) => (
@@ -157,14 +164,30 @@ export default function TrackRecord() {
 						</div>
 					</div>
 
-					{/* Myfxbook Results Section */}
-					<div className='mb-12'>
+					<div className='mb-12 w-full'>
+						<p className='text-lg max-w-prose mx-auto mb-8'>
+							In our monthly performance analysis, we consistently demonstrate that we are surpassing the benchmarks we’ve committed to achieving for our investors. Regardless of market conditions, we are not only meeting our goals but also closing each month with good profits. Our unwavering dedication ensures that we consistently deliver positive returns, striving to maximize gains for our investors even in challenging market environments.
+						</p>
+					</div>
+
+					<div className='mb-12 w-full'>
+						<h2 className='text-2xl font-semibold mb-4 text-center'>Profits Snapshots</h2>
+						<div className='d-flex overflow-x-scroll w-full'>
+							{scrollerImages.map((image, index) => (
+								<div key={index} className='mr-4'>
+									<img src={image} alt={`Scroller Image ${index + 1}`} className='rounded shadow-lg' />
+								</div>
+							))}
+						</div>
+					</div>
+
+					<div className='mb-12 w-full'>
 						<h2 className='text-2xl font-semibold mb-4 text-center'>Our Myfxbook Results</h2>
 						<Carousel>
 							{images.map((image, index) => (
 								<Carousel.Item key={index}>
 									<img
-										className='d-block w-100'
+										className='d-block w-full'
 										src={image}
 										alt={`Myfxbook result ${index + 1}`}
 									/>
