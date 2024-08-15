@@ -21,22 +21,29 @@ export default function FinanceSolutions() {
 
         {/* Three Boxes */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-          {/* 1st Box */}
-          <div className="bg-gray-900 p-10 rounded-lg transform transition duration-500 hover:scale-105">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-2xl font-bold text-white">Automated Savings</h3>
-              <Image
-                src="/images/features-03-image-01.png" // Replace with actual path
-                alt="Automated Savings"
-                width={60}
-                height={60}
-                className="rounded-full"
-              />
+          {/* 1st Box - Updated */}
+          <div className="bg-gray-900 p-10 rounded-lg transform transition duration-500 hover:scale-105 flex flex-col lg:flex-row items-center lg:items-start">
+            <div className="lg:w-1/2">
+              <h3 className="text-2xl font-bold text-white mb-4">Automated Savings</h3>
+              <p className="text-gray-400 mb-4">
+                Automatically move money to savings based on personalized financial recommendations.
+              </p>
+              <div className="text-green-500 text-lg font-semibold">-19% Saved this month</div>
             </div>
-            <p className="text-gray-400 mb-4">
-              Automatically move money to savings based on personalized financial recommendations.
-            </p>
-            <div className="text-green-500 text-lg font-semibold">-19% Saved this month</div>
+            <div className="lg:w-1/2 mt-6 lg:mt-0 lg:ml-6 flex justify-center">
+              <div className="relative w-32 h-32">
+                <Image
+                  src="/images/zigzag-01.png" // Replace with actual path
+                  alt="Automated Savings"
+                  layout="fill"
+                  className="rounded-lg"
+                />
+                <div className="absolute bottom-2 left-2 bg-white text-gray-900 p-2 rounded-md">
+                  <p className="text-green-600 text-lg font-bold">-19%</p>
+                  <p className="text-xs text-gray-600">Saved this month</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* 3rd Box */}
@@ -44,7 +51,7 @@ export default function FinanceSolutions() {
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-2xl font-bold text-white">Retirement Planning</h3>
               <Image
-                src="/images/features-03-image-03.png" // Replace with actual path
+                src="/images/zigzag-03.png" // Replace with actual path
                 alt="Retirement Planning"
                 width={60}
                 height={60}
@@ -65,7 +72,7 @@ export default function FinanceSolutions() {
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-2xl font-bold text-white">Investment Opportunities</h3>
               <Image
-                src="/images/features-03-image-02.png" // Replace with actual path
+                src="/images/zigzag-02.png" // Replace with actual path
                 alt="Investment Opportunities"
                 width={60}
                 height={60}

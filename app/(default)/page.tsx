@@ -12,12 +12,14 @@ import Loader from "@/components/loader";
 import Services from "@/components/Services";
 import Elevation from "@/components/Elevation";
 import Plans from "@/components/plans";
+import Reviews from "@/components/reviews";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Zigzag />
+      <Reviews />
       <Services />
       <Plans />
       <Features />

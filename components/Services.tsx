@@ -36,7 +36,7 @@ export default function Services() {
               </div>
               {/* Content */}
               <div className="text-center md:text-left">
-                <h3 className="h3 mb-3">Personalized Budget Planner Tool</h3>
+                <h3 className="h3 mb-3">Personalized Fund Management Plan</h3>
                 <p className="text-lg text-gray-400 mb-4">
                   Navigate your financial journey with our Comprehensive Debt Management system, effective debt reduction strategies.
                 </p>
@@ -60,7 +60,7 @@ export default function Services() {
               </div>
               {/* Content */}
               <div className="text-center md:text-left">
-                <h3 className="h3 mb-3">Comprehensive Debt Management</h3>
+                <h3 className="h3 mb-3">Account Management Plan</h3>
                 <p className="text-lg text-gray-400 mb-4">
                   Navigate your financial journey with our Comprehensive Debt Management system, effective debt reduction strategies.
                 </p>
