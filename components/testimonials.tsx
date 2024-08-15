@@ -1,44 +1,58 @@
-import Image from "next/image";
-import Link from "next/link";
+export default function UserSatisfaction() {
+	return (
+		<section id="user-satisfaction" className="bg-gray-900 text-white py-12">
+			<div className="max-w-7xl mx-auto px-4 sm:px-6">
+				{/* User Satisfaction Section */}
+				<div className="text-center mb-12">
+					<h3 className="text-4xl font-bold mb-4">
+						Most used financial app used by millions of happy users
+					</h3>
+				</div>
 
-export default function Testimonials() {
-  return (
-			<section id='testimonials'>
-				<div className='max-w-6xl mx-auto px-4 sm:px-6 bg-green-700'>
-					<div className='py-12 md:py-20 border-t border-gray-800 flex flex-col lg:flex-row items-center'>
-						{/* Section header */}
-						<div className='max-w-3xl mx-auto text-center lg:text-left lg:w-2/3 pb-12 md:pb-20'>
-							<h2 className='h2 mb-4 text-white'>About Gainify</h2>
-							<p className='text-xl text-white'>
-								Gainify is a fund management company that excels in navigating financial
-								markets to achieve outstanding returns. We combine expert strategies
-								with financial education to help clients reach their financial goals and
-								attain long-term success.
-							</p>
-
-							<div className='mt-8 font-bold text-white hover:text-black hover:underline hover:underline-offset-4 cursor-pointer'>
-							<Link href='/about-us'>{'> '}&nbsp;&nbsp;Learn More
-              </Link>
-              </div>
-						</div>
-
-						{/* Image on the right side */}
-						<div className='w-full lg:w-1/3 flex justify-center'>
-							{/* <Image
-              src="/images/about-us.jpg"
-              alt="About Us"
-              width={400}
-              height={400}
-              className="rounded-lg"
-            /> */}
+				{/* Top Row */}
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+					<div className="flex justify-center">
+						<div className="bg-gray-800 p-8 rounded-lg text-center w-full">
+							<p className="text-4xl font-bold text-blue-500">1.5M+</p>
+							<p className="mt-2">Downloads on App Store</p>
 						</div>
 					</div>
-
-					{/* Testimonials */}
-					<div className='max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none'>
-						{/* No testimonials included */}
+					<div className="flex justify-center">
+						<div className="bg-gray-800 p-8 rounded-lg text-center w-full">
+							<p className="text-4xl font-bold text-blue-500">4.9</p>
+							<p className="mt-2">Ratings out of 5</p>
+						</div>
 					</div>
 				</div>
-			</section>
-		);
+
+				{/* Bottom Row */}
+				<div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+					<div className="flex justify-center">
+						<div className="bg-gray-800 p-8 rounded-lg text-center w-full">
+							<p className="text-2xl font-bold">150k+</p>
+							<p className="mt-2">Active Customers</p>
+						</div>
+					</div>
+					<div className="flex justify-center">
+						<div className="bg-gray-800 p-8 rounded-lg text-center w-full">
+							<p className="text-2xl font-bold">5%+</p>
+							<p className="mt-2">Spending reduction</p>
+						</div>
+					</div>
+					<div className="flex justify-center">
+						<div className="bg-gray-800 p-8 rounded-lg text-center w-full">
+							<p className="text-2xl font-bold">20%+</p>
+							<p className="mt-2">Increase savings</p>
+						</div>
+					</div>
+					<div className="flex justify-center">
+						<div className="bg-gray-800 p-8 rounded-lg text-center w-full">
+							<p className="text-2xl font-bold">99k+</p>
+							<p className="mt-2">Positive reviews</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	);
 }
