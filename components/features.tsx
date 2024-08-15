@@ -2,6 +2,13 @@ export default function Features() {
   return (
     <section className="bg-gray-50 py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        {/* "Extra Features" Button */}
+        <div className="text-center mb-8">
+          <button className="px-4 py-2 bg-gray-800 text-gray-200 rounded-full">
+            Extra Features
+          </button>
+        </div>
+
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800">
@@ -63,38 +70,28 @@ export default function Features() {
           </div>
         </div>
 
-        {/* 2 More Feature Cards Below */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-          {/* 4th Feature Card */}
-          <div className="bg-white rounded-lg shadow-md p-8 text-center transition-transform duration-300 hover:shadow-lg hover:-translate-y-2">
-            <div className="bg-blue-100 p-4 rounded-full inline-block mb-6">
-              <img
-                src="/path/to/icon4.png"
-                alt="Investment Strategies"
-                className="mx-auto"
-                width={40}
-              />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-3">Investment Strategies</h3>
-            <p className="text-gray-600">
-              Discover effective investment strategies to optimize your portfolio and maximize returns.
-            </p>
+        {/* New Section with Seven Small Boxes */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+          <div className="bg-gray-200 rounded-lg p-4 text-center">
+            <p className="text-sm text-gray-600">Secure</p>
           </div>
-
-          {/* 5th Feature Card */}
-          <div className="bg-white rounded-lg shadow-md p-8 text-center transition-transform duration-300 hover:shadow-lg hover:-translate-y-2">
-            <div className="bg-blue-100 p-4 rounded-full inline-block mb-6">
-              <img
-                src="/path/to/icon5.png"
-                alt="Financial Tools"
-                className="mx-auto"
-                width={40}
-              />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-3">Financial Tools</h3>
-            <p className="text-gray-600">
-              Equip yourself with our advanced financial tools to manage your wealth effectively.
-            </p>
+          <div className="bg-gray-200 rounded-lg p-4 text-center">
+            <p className="text-sm text-gray-600">Investment Assistance</p>
+          </div>
+          <div className="bg-gray-200 rounded-lg p-4 text-center">
+            <p className="text-sm text-gray-600">Spending Budget</p>
+          </div>
+          <div className="bg-gray-200 rounded-lg p-4 text-center">
+            <p className="text-sm text-gray-600">Trend Reports</p>
+          </div>
+          <div className="bg-gray-200 rounded-lg p-4 text-center">
+            <p className="text-sm text-gray-600">Insurance Advisor</p>
+          </div>
+          <div className="bg-gray-200 rounded-lg p-4 text-center">
+            <p className="text-sm text-gray-600">Expert Insight</p>
+          </div>
+          <div className="bg-gray-200 rounded-lg p-4 text-center">
+            <p className="text-sm text-gray-600">Easy</p>
           </div>
         </div>
       </div>

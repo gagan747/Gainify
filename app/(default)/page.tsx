@@ -10,6 +10,8 @@ import Zigzag from "@/components/zigzag";
 import Testimonials from "@/components/testimonials";
 import Loader from "@/components/loader";
 import Services from "@/components/Services";
+import Elevation from "@/components/Elevation";
+import Plans from "@/components/plans";
 
 export default function Home() {
   return (
@@ -17,8 +19,10 @@ export default function Home() {
       <Hero />
       <Zigzag />
       <Services />
+      <Plans />
       <Features />
       <Testimonials />
+      <Elevation />
       <Newsletter />
       <Loader />
     </>

@@ -5,6 +5,13 @@ export default function Services() {
     <section id="services">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
+          {/* "Our Services" Button */}
+          <div className="text-center mb-8">
+            <button className="px-4 py-2 bg-gray-800 text-gray-200 rounded-full">
+              Our Services
+            </button>
+          </div>
+
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">Make a Lasting Financial Journey With Finance</h1>
