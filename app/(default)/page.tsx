@@ -13,6 +13,7 @@ import Services from "@/components/Services";
 import Elevation from "@/components/Elevation";
 import Plans from "@/components/plans";
 import Reviews from "@/components/reviews";
+import Exceptional from "@/components/exceptional";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Reviews />
       <Services />
       <Plans />
+      <Exceptional />
       <Features />
       <Testimonials />
       <Elevation />
