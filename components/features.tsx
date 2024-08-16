@@ -33,7 +33,7 @@ export default function Features() {
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-3">Financial Goals</h3>
             <p className="text-gray-600">
-              Set achievable financial goals with our intuitive tool, paving your path towards financial freedom.
+              Set achievable financial goals with us,and we will help you to your path towards achieve financial freedom.
             </p>
           </div>
 
@@ -47,9 +47,9 @@ export default function Features() {
                 width={40}
               />
             </div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-3">Expense Tracker</h3>
+            <h3 className="text-xl font-semibold text-gray-800 mb-3">Portfolio Tracker</h3>
             <p className="text-gray-600">
-              Monitor your spending efficiently and accurately with our comprehensive Expense Tracker.
+              Monitor your Portfolio every day how much profits we have generated to you in out Portfolio Tracker.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ export default function Features() {
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-3">Financial Education</h3>
             <p className="text-gray-600">
-              Empower your journey with our Financial Education resources, fostering informed decisions.
+              Empower your journey with our Financial Education resources, fostering informed decisions , invest wisely.
             </p>
           </div>
         </div>
@@ -79,13 +79,13 @@ export default function Features() {
             <p className="text-sm text-gray-600">Investment Assistance</p>
           </div>
           <div className="bg-gray-200 rounded-lg p-4 text-center">
-            <p className="text-sm text-gray-600">Spending Budget</p>
+            <p className="text-sm text-gray-600">Financial Security</p>
           </div>
           <div className="bg-gray-200 rounded-lg p-4 text-center">
-            <p className="text-sm text-gray-600">Trend Reports</p>
+            <p className="text-sm text-gray-600">Personalized Plans</p>
           </div>
           <div className="bg-gray-200 rounded-lg p-4 text-center">
-            <p className="text-sm text-gray-600">Insurance Advisor</p>
+            <p className="text-sm text-gray-600">Investment Advisors</p>
           </div>
           <div className="bg-gray-200 rounded-lg p-4 text-center">
             <p className="text-sm text-gray-600">Expert Insight</p>

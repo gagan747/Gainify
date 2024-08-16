@@ -55,8 +55,8 @@ export default function UserSatisfaction() {
             <div className="flex justify-center items-center space-x-4">
               <FaWallet className="text-2xl text-blue-500" />
               <div>
-                <p className="text-2xl font-bold">5%+</p>
-                <p className="mt-2 text-sm text-gray-200">Spending reduction</p>
+                <p className="text-2xl font-bold">95%+</p>
+                <p className="mt-2 text-sm text-gray-200">Customer Retention rate</p>
               </div>
             </div>
           </div>

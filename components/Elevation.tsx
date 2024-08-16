@@ -9,13 +9,13 @@ export default function () {
             Finance 
           </span>
           <h1 className="text-4xl font-extrabold text-gray-900 mb-6">
-            Elevate your financial journey with Financia
+            Elevate your financial journey with Gainify
           </h1>
           <p className="text-lg text-gray-500 mb-10">
-            Unlock your financial potential with BikFinance. We provide personalized tools and insights to elevate your financial journey.
+          Unlock your financial potential with Gainify. Our tailored plans and expert insights empower you to elevate every step of your financial journey."
           </p>
           <button className="mt-4 px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition">
-            Duplicate in Framer
+            Let,s get started
           </button>
         </div>
       </div>
