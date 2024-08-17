@@ -2,7 +2,7 @@
 //@ts-ignore
 
 import { useState } from 'react';
-import { FaInstagram, FaFacebook, FaWhatsapp, FaTelegramPlane } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaWhatsapp, FaTelegramPlane, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 
 export default function Contactus() {
 	const [formState, setFormState] = useState({ fullName: '', email: '', phone: '', message: '' });
@@ -12,7 +12,6 @@ export default function Contactus() {
 	const handleSubmit = async (event: any) => {
 		event.preventDefault();
 
-		// Form submission logic goes here
 		if (formState.fullName && formState.email && formState.message) {
 			setSuccess('Thank you! Your message has been sent.');
 			setFormState({ fullName: '', email: '', phone: '', message: '' });
@@ -28,99 +27,85 @@ export default function Contactus() {
 	};
 
 	return (
-		<section className='font-poppins max-w-4xl mx-auto p-8 mt-16'>
-			{/* Added mt-16 for top margin */}
-			<h1 className='text-3xl font-bold text-center mb-8'>Contact Us</h1>
-			<p className='text-center mb-8'>
-				We’d love to hear from you! Whether you have a question, feedback, or need support, our team is here to help.
-			</p>
+		<section className='font-poppins max-w-5xl mx-auto p-8 mt-16'>
+			<h1 className='text-4xl font-bold text-center mb-8'>We would love to hear from you</h1>
+			<div className='bg-white text-gray-800 rounded-xl p-10 shadow-lg'>
+				<div className='flex flex-col lg:flex-row lg:space-x-10'>
+					<div className='flex-1'>
+						<div className='mb-8'>
+							<h2 className='text-2xl font-bold mb-4'>Connect with us</h2>
+							<p className='mb-6'>
+								Connect with us. We value your input. Together, we can create a better financial future. Let's start today.
+							</p>
+							<div className='bg-gray-100 rounded-lg p-6'>
+								<div className='mb-4'>
+									<h3 className='text-xl font-bold mb-2'>Head Office</h3>
+									<p className='flex items-center'><FaMapMarkerAlt className='mr-2' /> 5899 Alexys Highway Suite 678, NR, Nevada, USA</p>
+								</div>
+								<div className='mb-4'>
+									<h3 className='text-xl font-bold mb-2'>Phone</h3>
+									<p className='flex items-center'><FaPhone className='mr-2' /> +1234 567 890</p>
+								</div>
+								<div>
+									<h3 className='text-xl font-bold mb-2'>Email</h3>
+									<p className='flex items-center'><FaEnvelope className='mr-2' /> customer@financia.com</p>
+								</div>
+							</div>
+						</div>
+					</div>
 
-			<hr className='mb-8' />
-
-			<div className='mb-8'>
-				<h2 className='text-2xl font-bold mb-4'>Our Contact Information</h2>
-				<ul className='list-none'>
-					<li><strong>Phone:</strong> +91 7417123998</li>
-					<li><strong>WhatsApp:</strong> +91 7417123998</li>
-					<li><strong>Email:</strong> support@gainifyofficial.com</li>
-					{/* <li><strong>Address:</strong> 123 Main Street, Suite 400, City, State, ZIP Code</li> */}
-				</ul>
+					<div className='flex-1'>
+						<form onSubmit={handleSubmit} className='bg-gray-100 rounded-lg p-6'>
+							<div className='mb-4'>
+								<input
+									type='text'
+									id='fullName'
+									name='fullName'
+									placeholder='Jane Smith'
+									value={formState.fullName}
+									onChange={handleChange}
+									required
+									className='w-full px-4 py-3 rounded-lg text-gray-800 border border-gray-300 focus:outline-none focus:border-blue-500'
+								/>
+							</div>
+							<div className='mb-4'>
+								<input
+									type='email'
+									id='email'
+									name='email'
+									placeholder='jane@example.com'
+									value={formState.email}
+									onChange={handleChange}
+									required
+									className='w-full px-4 py-3 rounded-lg text-gray-800 border border-gray-300 focus:outline-none focus:border-blue-500'
+								/>
+							</div>
+							<div className='mb-4'>
+								<textarea
+									id='message'
+									name='message'
+									placeholder='Your message'
+									value={formState.message}
+									onChange={handleChange}
+									required
+									className='w-full px-4 py-3 rounded-lg text-gray-800 border border-gray-300 focus:outline-none focus:border-blue-500'
+									rows={5}
+								></textarea>
+							</div>
+							<button
+								type='submit'
+								className='w-full bg-blue-600 text-white py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300'
+							>
+								Submit
+							</button>
+							{success && <p className='text-green-500 mt-4'>{success}</p>}
+							{error && <p className='text-red-500 mt-4'>{error}</p>}
+						</form>
+					</div>
+				</div>
 			</div>
 
-			<hr className='mb-8' />
-
-			<div className='mb-8'>
-				<h2 className='text-2xl font-bold mb-4'>Send Us a Message</h2>
-				<form onSubmit={handleSubmit}>
-					<div className='mb-4'>
-						<label htmlFor='fullName' className='block text-sm font-medium text-gray-700'>
-							Full Name
-						</label>
-						<input
-							type='text'
-							id='fullName'
-							name='fullName'
-							value={formState.fullName}
-							onChange={handleChange}
-							required
-							className='mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
-						/>
-					</div>
-					<div className='mb-4'>
-						<label htmlFor='email' className='block text-sm font-medium text-gray-700'>
-							Email
-						</label>
-						<input
-							type='email'
-							id='email'
-							name='email'
-							value={formState.email}
-							onChange={handleChange}
-							required
-							className='mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
-						/>
-					</div>
-					<div className='mb-4'>
-						<label htmlFor='phone' className='block text-sm font-medium text-gray-700'>
-							Phone (optional)
-						</label>
-						<input
-							type='tel'
-							id='phone'
-							name='phone'
-							value={formState.phone}
-							onChange={handleChange}
-							className='mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
-						/>
-					</div>
-					<div className='mb-4'>
-						<label htmlFor='message' className='block text-sm font-medium text-gray-700'>
-							Message
-						</label>
-						<textarea
-							id='message'
-							name='message'
-							value={formState.message}
-							onChange={handleChange}
-							required
-							className='mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
-							rows={5}
-						></textarea>
-					</div>
-					<button
-						type='submit'
-						className='w-full bg-green-600 text-white py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500'
-					>
-						Send Message
-					</button>
-					{success && <p className='text-green-500 mt-4'>{success}</p>}
-					{error && <p className='text-red-500 mt-4'>{error}</p>}
-				</form>
-			</div>
-
-			<hr className='mb-8' />
-
-			<div className='mb-8 text-center'>
+			<div className='text-center mt-10'>
 				<h2 className='text-2xl font-bold mb-4'>Follow Us</h2>
 				<p className='mb-4'>Stay connected with us through social media.</p>
 				<div className='flex justify-center space-x-6'>
