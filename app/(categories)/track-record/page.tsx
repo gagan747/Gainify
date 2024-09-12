@@ -3,7 +3,7 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 import { Chart, CategoryScale, LinearScale, LineElement, PointElement, LineController, Title, Tooltip, Legend } from 'chart.js';
-import { Table, Carousel } from 'react-bootstrap';
+import { Table } from 'react-bootstrap';
 
 // Register necessary components for chart.js
 Chart.register(CategoryScale, LinearScale, LineElement, PointElement, LineController, Title, Tooltip, Legend);
@@ -75,10 +75,16 @@ export default function TrackRecord() {
 		'/images/myfxbook4.png',
 	];
 	const scrollerImages = [
-		'/images/scroller1.png',
-		'/images/scroller2.png',
-		'/images/scroller3.png',
-		'/images/scroller4.png',
+		'/images/track-r.png',
+		'/images/track-r2.png',
+		'/images/track-r3.png',
+		'/images/track-r4.png',
+		'/images/track-r5.png',
+		'/images/track-r6.png',
+		'/images/track-r7.png',
+		'/images/track-r8.png',
+		'/images/track-r9.png',
+		'/images/track-r10.png',
 	];
 
 	return (
@@ -164,36 +170,37 @@ export default function TrackRecord() {
 						</div>
 					</div>
 
-					<div className='mb-12 w-full'>
-						<p className='text-lg max-w-prose mx-auto mb-8'>
-							In our monthly performance analysis, we consistently demonstrate that we are surpassing the benchmarks we’ve committed to achieving for our investors. Regardless of market conditions, we are not only meeting our goals but also closing each month with good profits. Our unwavering dedication ensures that we consistently deliver positive returns, striving to maximize gains for our investors even in challenging market environments.
-						</p>
-					</div>
-
-					<div className='mb-12 w-full'>
-						<h2 className='text-2xl font-semibold mb-4 text-center'>Profits Snapshots</h2>
-						<div className='d-flex overflow-x-scroll w-full'>
+					{/* Adjusted Images in Flexbox, Side by Side */}
+					<div className="mb-12 w-full">
+						<h2 className="text-2xl font-semibold mb-4 text-center">Profits Snapshots</h2>
+						<div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px' }}>
 							{scrollerImages.map((image, index) => (
-								<div key={index} className='mr-4'>
-									<img src={image} alt={`Scroller Image ${index + 1}`} className='rounded shadow-lg' />
+								<div key={index}>
+									<img
+										src={image}
+										alt={`Scroller Image ${index + 1}`}
+										className="rounded shadow-lg"
+										style={{ width: '150px', height: 'auto' }}
+									/>
 								</div>
 							))}
 						</div>
 					</div>
 
-					<div className='mb-12 w-full'>
-						<h2 className='text-2xl font-semibold mb-4 text-center'>Our Myfxbook Results</h2>
-						<Carousel>
+					<div className="mb-12 w-full">
+						<h2 className="text-2xl font-semibold mb-4 text-center">Our Myfxbook Results</h2>
+						<div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px' }}>
 							{images.map((image, index) => (
-								<Carousel.Item key={index}>
+								<div key={index}>
 									<img
-										className='d-block w-full'
 										src={image}
 										alt={`Myfxbook result ${index + 1}`}
+										className="rounded shadow-lg"
+										style={{ width: '150px', height: 'auto' }}
 									/>
-								</Carousel.Item>
+								</div>
 							))}
-						</Carousel>
+						</div>
 					</div>
 				</div>
 			</div>
