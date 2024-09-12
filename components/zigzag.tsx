@@ -33,7 +33,7 @@ export default function FinanceSolutions() {
             <div className="lg:w-1/2 mt-6 lg:mt-0 lg:ml-6 flex justify-center">
               <div className="relative w-32 h-32">
                 <Image
-                  src="/images/zigzag-01.png" // Replace with actual path
+                  src="/images/zigzag-06.png" // Replace with actual path
                   alt="Automated Savings"
                   layout="fill"
                   className="rounded-lg"
@@ -51,10 +51,10 @@ export default function FinanceSolutions() {
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-2xl font-bold text-white">Retirement Planning</h3>
               <Image
-                src="/images/zigzag-03.png" // Replace with actual path
+                src="/images/zigzag-08/2.png" // Replace with actual path
                 alt="Retirement Planning"
                 width={60}
-                height={60}
+                height={60} 
                 className="rounded-full"
               />
             </div>
