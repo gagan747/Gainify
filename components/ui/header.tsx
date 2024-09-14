@@ -84,7 +84,7 @@ export default function Header() {
             <Link href={"/#testimonials"} className="hover:text-gray-400">
               About Us
             </Link>
-            <Link href={"/#services"} className="hover:text-gray-400">
+            <Link href={"/our-services"} className="hover:text-gray-400">
               Our Services
             </Link>
             <Link href={"/contact-us"} className="hover:text-gray-400">

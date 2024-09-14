@@ -22,16 +22,25 @@ export default function Services() {
 
           {/* Items */}
           <div className="space-y-20">
-            {/* 1st item */}
+            {/* 1st item (Adjusted overlapping images) */}
             <div className="md:flex md:flex-row-reverse md:items-center">
               {/* Image */}
-              <div className="flex-shrink-0 max-w-sm md:max-w-none mb-8 md:mb-0 md:ml-8">
+              <div className="flex-shrink-0 max-w-sm md:max-w-none mb-8 md:mb-0 md:ml-8 relative">
+                {/* First image */}
                 <Image
-                  className="max-w-full mx-auto"
-                  src="/images/features-03-image-01.png"
+                  className="max-w-full mx-auto rounded-lg shadow-lg"
+                  src="/images/zigzag-14.png" // Replace with actual image path
                   width={470}
                   height={350}
                   alt="Personalized Budget Planner Tool"
+                />
+                {/* Second image (overlapped and positioned to the right and lower) */}
+                <Image
+                  className="absolute bottom-4 right-4 w-60 h-40 rounded-lg shadow-md"
+                  src="/images/zigzag-13.png" // Replace with actual image path
+                  width={235}
+                  height={175}
+                  alt="Comprehensive Debt Management"
                 />
               </div>
               {/* Content */}

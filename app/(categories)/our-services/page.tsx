@@ -28,7 +28,7 @@ export default function Services() {
               <div className="flex-shrink-0 max-w-sm md:max-w-none mb-8 md:mb-0 md:ml-8">
                 <Image
                   className="max-w-full mx-auto"
-                  src="/images/features-03-image-01.png"
+                  src="/images/xyz.png"
                   width={470}
                   height={350}
                   alt="Personalized Budget Planner Tool"
@@ -52,7 +52,7 @@ export default function Services() {
               <div className="flex-shrink-0 max-w-sm md:max-w-none mb-8 md:mb-0 md:mr-8">
                 <Image
                   className="max-w-full mx-auto"
-                  src="/images/features-03-image-02.png"
+                  src="/images/zigzag-01.png"
                   width={470}
                   height={350}
                   alt="Comprehensive Debt Management"
