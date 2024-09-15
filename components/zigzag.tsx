@@ -49,7 +49,7 @@ export default function FinanceSolutions() {
           {/* 3rd Box */}
           <div className="bg-gray-900 p-10 rounded-lg transform transition duration-500 hover:scale-105 lg:row-span-2">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-2xl font-bold text-white">Retirement Planning</h3>
+              <h3 className="text-2xl font-bold text-white">Long-Term Planning</h3>
               <Image
                 src="/images/zigzag-08/2.png" // Replace with actual path
                 alt="Retirement Planning"
