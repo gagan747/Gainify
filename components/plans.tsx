@@ -33,19 +33,17 @@ export default function Plans() {
 
         {/* Plan Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Standard Plan */}
+          {/* Standard Plan with Monthly Lock-in Period */}
           <div className="bg-gray-800 rounded-lg shadow-md p-8 text-center transition-transform duration-300 hover:shadow-lg hover:-translate-y-2">
-            <h3 className="text-xl font-semibold text-white mb-3">Standard</h3>
-            <p className="text-gray-400 mb-6">
-              Essential finance tools for budgeting and expense tracking.
-            </p>
-            <p className="text-3xl font-bold text-white mb-6">$9</p>
+            <div className="mb-6">
+              <img src="/images/plant-icon.png" alt="Growth Icon" className="mx-auto h-20" />
+            </div>
+            <h3 className="text-lg font-semibold text-gray-300 mb-1">Grow at up to</h3>
+            <p className="text-4xl font-bold text-white mb-1">10% returns*</p>
+            <p className="text-gray-400 mb-6">*T&C Apply</p>
             <ul className="text-gray-400 space-y-2 mb-6">
-              <li>✓ Budget Tracking</li>
-              <li>✓ Basic Bill Reminders</li>
-              <li>✓ Expense Categorization</li>
-              <li>✓ Email Support</li>
-              <li>✓ Basic Analytics</li>
+              <li>✓  Monthly lock-in period</li>
+              <li>✓ ₹10,000 min. amount</li>
             </ul>
             <button className="bg-white text-gray-900 font-semibold py-2 px-4 rounded-full focus:outline-none">
               Get Started →
@@ -54,17 +52,17 @@ export default function Plans() {
 
           {/* Plus+ Plan */}
           <div className="bg-gray-800 rounded-lg shadow-md p-8 text-center transition-transform duration-300 hover:shadow-lg hover:-translate-y-2">
-            <h3 className="text-xl font-semibold text-white mb-3">Plus+</h3>
+            <h3 className="text-xl font-semibold text-white mb-3">Monthly Withdrawls</h3>
             <p className="text-gray-400 mb-6">
-              Essential finance tools for budgeting and expense tracking.
+              Get your withdrawals every Month and Grow up to
             </p>
-            <p className="text-3xl font-bold text-white mb-6">$19</p>
+            <p className="text-3xl font-bold text-white mb-6">10% Returns</p>
+            <p className="text-gray-400 mb-6">*T&C Apply</p>
             <ul className="text-gray-400 space-y-2 mb-6">
-              <li>✓ Advanced Budgeting</li>
-              <li>✓ Bill Pay Reminders</li>
-              <li>✓ Detailed Expense Reports</li>
-              <li>✓ Priority Email Support</li>
-              <li>✓ Advanced Analytics</li>
+              <li>✓ Monthly Lock-in Period</li>
+              <li>✓ ₹10,000 min. amount</li>
+              <li>✓ Daily Updates</li>
+              
             </ul>
             <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-full focus:outline-none">
               Get Started →

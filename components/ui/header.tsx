@@ -60,7 +60,7 @@ export default function Header() {
 
   return (
     <header
-      className="fixed w-full bg-[#0a0a0a] text-white"
+      className="fixed w-full bg-[#060d15] text-white" // Updated background color
       style={{ zIndex: 999, fontFamily: "'Inter', sans-serif" }} // Apply the Inter font here
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -69,8 +69,8 @@ export default function Header() {
           <div className="shrink-0">
             <Link href="/" aria-label="Gainify">
               <img
-                src={"/images/gurmanLogo.png"}
-                style={{ width: "8rem" }}
+                src={"/images/logo-nobg.png"}
+                style={{ width: "13rem" }}
                 alt="Logo"
               />
             </Link>
