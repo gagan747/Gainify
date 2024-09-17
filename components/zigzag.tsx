@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FinanceSolutions() {
   return (
-    <section id="finance-solutions" className="bg-dark py-20">
+    <section id="finance-solutions" className="py-20" style={{ backgroundColor: '#18141c' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           {/* "Future of Finance" Button */}
@@ -21,11 +21,11 @@ export default function FinanceSolutions() {
 
         {/* Three Boxes */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-          {/* 1st Box - Updated */}
-          <div className="bg-gray-900 p-10 rounded-lg transform transition duration-500 hover:scale-105 flex flex-col lg:flex-row items-center lg:items-start">
+          {/* 1st Box */}
+          <div className="bg-white p-10 rounded-lg transform transition duration-500 hover:scale-105 flex flex-col lg:flex-row items-center lg:items-start">
             <div className="lg:w-1/2">
-              <h3 className="text-2xl font-bold text-white mb-4">Automated Savings</h3>
-              <p className="text-gray-400 mb-4">
+              <h3 className="text-2xl font-bold text-black mb-4">Automating Profit Generation</h3>
+              <p className="text-gray-800 mb-4">
                 Automatically move money to savings based on personalized financial recommendations.
               </p>
               <div className="text-green-500 text-lg font-semibold">-19% Saved this month</div>
@@ -47,30 +47,30 @@ export default function FinanceSolutions() {
           </div>
 
           {/* 3rd Box */}
-          <div className="bg-gray-900 p-10 rounded-lg transform transition duration-500 hover:scale-105 lg:row-span-2">
+          <div className="bg-white p-10 rounded-lg transform transition duration-500 hover:scale-105 lg:row-span-2">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-2xl font-bold text-white">Long-Term Planning</h3>
+              <h3 className="text-2xl font-bold text-black">Long-Term Planning</h3>
               <Image
                 src="/images/zigzag-08/2.png" // Replace with actual path
                 alt="Retirement Planning"
                 width={60}
-                height={60} 
+                height={60}
                 className="rounded-full"
               />
             </div>
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-800 mb-4">
               Guide your journey with comfortable retirement tools and planning.
             </p>
-            <div className="text-gray-300 text-lg font-semibold">
+            <div className="text-gray-800 text-lg font-semibold">
               Monthly: $1,400/mo <br />
               Goal: $2,900,000
             </div>
           </div>
 
           {/* 2nd Box */}
-          <div className="bg-gray-900 p-10 rounded-lg transform transition duration-500 hover:scale-105">
+          <div className="bg-white p-10 rounded-lg transform transition duration-500 hover:scale-105">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-2xl font-bold text-white">Investment Opportunities</h3>
+              <h3 className="text-2xl font-bold text-black">Investment Opportunities</h3>
               <Image
                 src="/images/zigzag-02.png" // Replace with actual path
                 alt="Investment Opportunities"
@@ -79,7 +79,7 @@ export default function FinanceSolutions() {
                 className="rounded-full"
               />
             </div>
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-800 mb-4">
               Explore a wide range of investment options tailored to your unique financial goals.
             </p>
             <div className="text-blue-500 text-lg font-semibold">+187% Market Insights</div>

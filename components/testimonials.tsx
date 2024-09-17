@@ -2,7 +2,7 @@ import { FaDownload, FaStar, FaUsers, FaWallet, FaPiggyBank, FaThumbsUp } from '
 
 export default function UserSatisfaction() {
   return (
-    <section id="user-satisfaction" className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-12">
+    <section id="user-satisfaction" className="bg-[#080c14] text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Left Side (Heading) */}

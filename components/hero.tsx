@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function HeroHome() {
   return (
-    <section className="relative bg-[#0a0a0a] text-white h-screen overflow-visible">
+    <section className="relative bg-[#060d15] text-white h-screen overflow-visible">
       {/* Join the Future Button */}
       <div className="absolute top-4 left-4 z-50">
         <a
