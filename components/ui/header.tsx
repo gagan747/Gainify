@@ -81,7 +81,7 @@ export default function Header() {
             <Link href={"/track-record"} className="hover:text-gray-400">
               Track Record
             </Link>
-            <Link href={"/#testimonials"} className="hover:text-gray-400">
+            <Link href={"/about-us"} className="hover:text-gray-400">
               About Us
             </Link>
             <Link href={"/our-services"} className="hover:text-gray-400">

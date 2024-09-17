@@ -20,24 +20,24 @@ export default function FinanceSolutions() {
         </div>
 
         {/* Three Boxes */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-6"> {/* Further reduced gap */}
           {/* 1st Box */}
-          <div className="bg-white p-10 rounded-lg transform transition duration-500 hover:scale-105 flex flex-col lg:flex-row items-center lg:items-start">
+          <div className="bg-white p-12 rounded-3xl transform transition duration-500 hover:scale-105 flex flex-col lg:flex-row items-center lg:items-start">
             <div className="lg:w-1/2">
               <h3 className="text-2xl font-bold text-black mb-4">Automating Profit Generation</h3>
               <p className="text-gray-800 mb-4">
-                Automatically move money to savings based on personalized financial recommendations.
+                Automating profit generation to consistently grow your wealth effortlessly.
               </p>
             </div>
             <div className="lg:w-1/2 mt-6 lg:mt-0 lg:ml-6 flex justify-center">
-              <div className="relative w-32 h-32">
+              <div className="relative w-48 h-48"> {/* Increased size */}
                 <Image
                   src="/images/zigzag-06.png" // Replace with actual path
                   alt="Automated Savings"
                   layout="fill"
-                  className="rounded-lg"
+                  className="rounded-3xl"
                 />
-                <div className="absolute bottom-2 left-2 bg-white text-gray-900 p-2 rounded-md">
+                <div className="absolute bottom-2 left-2 bg-white text-gray-900 p-2 rounded-lg">
                   <p className="text-green-600 text-lg font-bold">+19%</p>
                   <p className="text-xs text-gray-600">Gained this month</p>
                 </div>
@@ -46,38 +46,50 @@ export default function FinanceSolutions() {
           </div>
 
           {/* 3rd Box */}
-          <div className="bg-white p-10 rounded-lg transform transition duration-500 hover:scale-105 lg:row-span-2">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-2xl font-bold text-black">Long-Term Planning</h3>
+          <div className="bg-white p-12 rounded-3xl transform transition duration-500 hover:scale-105 lg:row-span-2 flex flex-col items-center relative">
+            {/* Peaceful Tomorrow Button */}
+            <div className="absolute top-4 left-4">
+              <button className="px-4 py-2 bg-blue-100 text-blue-600 rounded-full font-medium">
+                PEACEFUL TOMORROW
+              </button>
+            </div>
+
+            <div className="relative w-full flex justify-center mb-4">
               <Image
                 src="/images/zigzag-08/2.png" // Replace with actual path
                 alt="Retirement Planning"
-                width={60}
-                height={60}
-                className="rounded-full"
+                width={400} // Increased width for a larger image
+                height={400} // Adjusted height to maintain aspect ratio
+                className="rounded-3xl"
               />
             </div>
-            <p className="text-gray-800 mb-4">
-              Guide your journey with comfortable retirement tools and planning.
-            </p>
+
+            <div className="flex justify-between w-full mt-4">
+              <h3 className="text-2xl font-bold text-black">Long-Term Planning</h3>
+              <p className="text-gray-800">
+                Guide your journey with comfortable retirement tools and planning.
+              </p>
+            </div>
           </div>
 
           {/* 2nd Box */}
-          <div className="bg-white p-10 rounded-lg transform transition duration-500 hover:scale-105">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-2xl font-bold text-black">Investment Opportunities</h3>
-              <Image
-                src="/images/zigzag-02.png" // Replace with actual path
-                alt="Investment Opportunities"
-                width={60}
-                height={60}
-                className="rounded-full"
-              />
+          <div className="bg-white p-12 rounded-3xl transform transition duration-500 hover:scale-105 flex lg:flex-row items-start">
+            <div className="lg:w-1/2 flex justify-center">
+              <div className="relative w-48 h-48 bg-blue-200 rounded-3xl flex justify-center items-center"> {/* Blue background for the image */}
+                <Image
+                  src="/images/zigzag-02.png" // Replace with actual path
+                  alt="Investment Opportunities"
+                  layout="fill"
+                  className="rounded-3xl"
+                />
+              </div>
             </div>
-            <p className="text-gray-800 mb-4">
-              Explore a wide range of investment options tailored to your unique financial goals.
-            </p>
-            <div className="text-blue-500 text-lg font-semibold">+187% Market Insights</div>
+            <div className="lg:w-1/2 flex flex-col justify-between items-end">
+              <h3 className="text-2xl font-bold text-black mb-5 mt-0">Investment Opportunities</h3>
+              <p className="text-gray-800 mb-0 mt-auto"> 
+                Secure your future with long-term planning and greater gains through compounding.
+              </p>
+            </div>
           </div>
         </div>
       </div>

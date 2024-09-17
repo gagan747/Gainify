@@ -47,7 +47,7 @@ export default function Services() {
               <div className="text-center md:text-left">
                 <h3 className="h3 mb-3 text-black">Personalized Fund Management Plan</h3>
                 <p className="text-lg text-gray-600 mb-4">
-                  Navigate your financial journey with our Comprehensive Debt Management system, effective debt reduction strategies.
+                Unlock your financial potential with a personalized fund management plan tailored to meet your unique goals and secure your future.
                 </p>
                 <button className="mt-4 px-4 py-2 bg-teal-500 text-white rounded-full">
                   Learn More
@@ -71,7 +71,7 @@ export default function Services() {
               <div className="text-center md:text-left">
                 <h3 className="h3 mb-3 text-black">Account Management Plan</h3>
                 <p className="text-lg text-gray-600 mb-4">
-                  Navigate your financial journey with our Comprehensive Debt Management system, effective debt reduction strategies.
+                Experience seamless financial control with a customized account management plan designed to streamline your finances and optimize your growth.
                 </p>
                 <button className="mt-4 px-4 py-2 bg-teal-500 text-white rounded-full">
                   Learn More

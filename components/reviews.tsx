@@ -6,7 +6,7 @@ export default function Reviews() {
       <div className='text-center mb-12'>
         <h1 className='text-2xl font-semibold pt-4'>
           More than <span className='text-yellow-500 text-3xl font-bold'>300+</span>{' '}
-          users love their financial journey
+          clients trust us with their financial success
         </h1>
       </div>
       <div className='w-full overflow-hidden'>
@@ -16,122 +16,112 @@ export default function Reviews() {
             <div className='flex flex-row space-x-8 mb-[34px]' key={i}>
               {/* Review 1 */}
               <div
-                className='bg-gray-800 rounded-lg p-8 shadow-md text-center'
+                className='bg-gray-800 rounded-3xl p-8 shadow-md text-center' // Changed to rounded-3xl
                 style={{ width: '360px', height: 'auto' }}>
                 <p className='text-gray-300 mb-4'>
-                  “The goal setting feature has helped me stay focused on my long-term
-                  financial goals. Highly recommended!”
+                  “Their returns have consistently outperformed the market. I'm more than satisfied with their service and results!”
                 </p>
-                <div className='text-white font-semibold'>John Anglik</div>
-                <div className='text-gray-400 text-sm'>Fitness Trainer</div>
+                <div className='text-white font-semibold'>John Anders</div>
+                <div className='text-gray-400 text-sm'>Investor</div>
               </div>
 
               {/* Review 2 */}
               <div
-                className='bg-gray-800 rounded-lg p-8 shadow-md text-center'
+                className='bg-gray-800 rounded-3xl p-8 shadow-md text-center' // Changed to rounded-3xl
                 style={{ width: '360px', height: 'auto' }}>
                 <p className='text-gray-300 mb-4'>
-                  “The digital innovation in this app has truly transformed my financial
-                  experience. It's a must-have!”
+                  “This company truly stands by its commitments. They have delivered on every promise, making me feel secure in my investments.”
                 </p>
-                <div className='text-white font-semibold'>Sarah Kasin</div>
-                <div className='text-gray-400 text-sm'>Financial Adviser</div>
+                <div className='text-white font-semibold'>Sarah Lee</div>
+                <div className='text-gray-400 text-sm'>Business Owner</div>
               </div>
 
               {/* Review 3 */}
               <div
-                className='bg-gray-800 rounded-lg p-8 shadow-md text-center'
+                className='bg-gray-800 rounded-3xl p-8 shadow-md text-center' // Changed to rounded-3xl
                 style={{ width: '360px', height: 'auto' }}>
                 <p className='text-gray-300 mb-4'>
-                  “The user-friendly interface makes managing finances a breeze. Best
-                  financial app out there!”
+                  “I value transparency, and they excel at it. I always know where my investments stand, which gives me total peace of mind.”
                 </p>
-                <div className='text-white font-semibold'>Jessica Pandaan</div>
-                <div className='text-gray-400 text-sm'>Fund Manager</div>
+                <div className='text-white font-semibold'>Jessica Carter</div>
+                <div className='text-gray-400 text-sm'>Marketing Executive</div>
               </div>
 
               {/* Review 4 */}
               <div
-                className='bg-gray-800 rounded-lg p-8 shadow-md text-center'
+                className='bg-gray-800 rounded-3xl p-8 shadow-md text-center' // Changed to rounded-3xl
                 style={{ width: '360px', height: 'auto' }}>
                 <p className='text-gray-300 mb-4'>
-                  “The debt management system is excellent. It’s helped me pay off my
-                  debts faster and regain control of my finances.”
+                  “The transaction process is seamless, fast, and reliable. Managing my portfolio has never been this easy.”
                 </p>
-                <div className='text-white font-semibold'>William Kacuk</div>
-                <div className='text-gray-400 text-sm'>Luxury Car Sales</div>
+                <div className='text-white font-semibold'>William Rogers</div>
+                <div className='text-gray-400 text-sm'>Real Estate Investor</div>
               </div>
 
               {/* Review 5 */}
               <div
-                className='bg-gray-800 rounded-lg p-8 shadow-md text-center'
+                className='bg-gray-800 rounded-3xl p-8 shadow-md text-center' // Changed to rounded-3xl
                 style={{ width: '360px', height: 'auto' }}>
                 <p className='text-gray-300 mb-4'>
-                  “The investment tracker keeps me updated on my portfolio performance.
-                  It's like having a personal financial advisor!”
+                  “Their commitment to my financial growth is clear. I’ve seen incredible returns, and I couldn’t be happier.”
                 </p>
-                <div className='text-white font-semibold'>Emily Sukun</div>
-                <div className='text-gray-400 text-sm'>Digital Marketer</div>
+                <div className='text-white font-semibold'>Emily Davis</div>
+                <div className='text-gray-400 text-sm'>Entrepreneur</div>
               </div>
 
               {/* Review 6 */}
               <div
-                className='bg-gray-800 rounded-lg p-8 shadow-md text-center'
+                className='bg-gray-800 rounded-3xl p-8 shadow-md text-center' // Changed to rounded-3xl
                 style={{ width: '360px', height: 'auto' }}>
                 <p className='text-gray-300 mb-4'>
-                  “The budgeting tools are comprehensive and easy to use. They've helped
-                  me save more each month.”
+                  “Their returns are unmatched. I’ve recommended their services to friends, and everyone has been impressed.”
                 </p>
-                <div className='text-white font-semibold'>Michael Thorne</div>
+                <div className='text-white font-semibold'>Michael Turner</div>
                 <div className='text-gray-400 text-sm'>Software Engineer</div>
               </div>
 
               {/* Review 7 */}
               <div
-                className='bg-gray-800 rounded-lg p-8 shadow-md text-center'
+                className='bg-gray-800 rounded-3xl p-8 shadow-md text-center' // Changed to rounded-3xl
                 style={{ width: '360px', height: 'auto' }}>
                 <p className='text-gray-300 mb-4'>
-                  “The customer support is outstanding! They were quick to help me
-                  navigate through the app’s features.”
+                  “Excellent customer service and always keeping me informed. They truly care about their clients' success.”
                 </p>
-                <div className='text-white font-semibold'>Olivia Kingsley</div>
+                <div className='text-white font-semibold'>Olivia Harrison</div>
                 <div className='text-gray-400 text-sm'>Graphic Designer</div>
               </div>
 
               {/* Review 8 */}
               <div
-                className='bg-gray-800 rounded-lg p-8 shadow-md text-center'
+                className='bg-gray-800 rounded-3xl p-8 shadow-md text-center' // Changed to rounded-3xl
                 style={{ width: '360px', height: 'auto' }}>
                 <p className='text-gray-300 mb-4'>
-                  “I love the real-time notifications. They keep me updated on all my
-                  transactions instantly.”
+                  “From transparency to timely returns, this company has exceeded my expectations in every way.”
                 </p>
-                <div className='text-white font-semibold'>James Noren</div>
+                <div className='text-white font-semibold'>James Nolan</div>
                 <div className='text-gray-400 text-sm'>Architect</div>
               </div>
 
               {/* Review 9 */}
               <div
-                className='bg-gray-800 rounded-lg p-8 shadow-md text-center'
+                className='bg-gray-800 rounded-3xl p-8 shadow-md text-center' // Changed to rounded-3xl
                 style={{ width: '360px', height: 'auto' }}>
                 <p className='text-gray-300 mb-4'>
-                  “The app’s design is sleek and modern, making my financial management
-                  experience enjoyable.”
+                  “Their platform is easy to use, and I can track everything. I trust them with my future.”
                 </p>
-                <div className='text-white font-semibold'>Sophia Valens</div>
-                <div className='text-gray-400 text-sm'>Marketing Specialist</div>
+                <div className='text-white font-semibold'>Sophia Vega</div>
+                <div className='text-gray-400 text-sm'>Financial Analyst</div>
               </div>
 
               {/* Review 10 */}
               <div
-                className='bg-gray-800 rounded-lg p-8 shadow-md text-center'
+                className='bg-gray-800 rounded-3xl p-8 shadow-md text-center' // Changed to rounded-3xl
                 style={{ width: '360px', height: 'auto' }}>
                 <p className='text-gray-300 mb-4'>
-                  “Tracking my expenses has never been easier. The app categorizes them
-                  perfectly for me.”
+                  “I’ve achieved consistent gains thanks to their expert management. They truly stand out in the industry.”
                 </p>
-                <div className='text-white font-semibold'>Daniel Crux</div>
-                <div className='text-gray-400 text-sm'>Entrepreneur</div>
+                <div className='text-white font-semibold'>Daniel Craig</div>
+                <div className='text-gray-400 text-sm'>Consultant</div>
               </div>
             </div>
           ))}
