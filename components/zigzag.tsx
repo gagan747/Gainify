@@ -28,7 +28,6 @@ export default function FinanceSolutions() {
               <p className="text-gray-800 mb-4">
                 Automatically move money to savings based on personalized financial recommendations.
               </p>
-              <div className="text-green-500 text-lg font-semibold">-19% Saved this month</div>
             </div>
             <div className="lg:w-1/2 mt-6 lg:mt-0 lg:ml-6 flex justify-center">
               <div className="relative w-32 h-32">
@@ -39,8 +38,8 @@ export default function FinanceSolutions() {
                   className="rounded-lg"
                 />
                 <div className="absolute bottom-2 left-2 bg-white text-gray-900 p-2 rounded-md">
-                  <p className="text-green-600 text-lg font-bold">-19%</p>
-                  <p className="text-xs text-gray-600">Saved this month</p>
+                  <p className="text-green-600 text-lg font-bold">+19%</p>
+                  <p className="text-xs text-gray-600">Gained this month</p>
                 </div>
               </div>
             </div>
@@ -61,10 +60,6 @@ export default function FinanceSolutions() {
             <p className="text-gray-800 mb-4">
               Guide your journey with comfortable retirement tools and planning.
             </p>
-            <div className="text-gray-800 text-lg font-semibold">
-              Monthly: $1,400/mo <br />
-              Goal: $2,900,000
-            </div>
           </div>
 
           {/* 2nd Box */}

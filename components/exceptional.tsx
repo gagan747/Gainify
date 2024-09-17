@@ -35,10 +35,10 @@ export default function Exceptional() {
                     {/* Card Content */}
                     <div className="ml-6 flex-1">
                         <h2 className="text-2xl font-semibold mb-4">
-                            Redefine Your Banking Experience with Financial Cards
+                            Redefine Your Trading Experience with Gainify
                         </h2>
                         <p className="text-gray-400 mb-6">
-                            Financial Cards transform banking, offering convenience, control, and seamless transactions.
+                            Highest Returns in the industry, Financial freedom, Professionol management, and seamless transactions.
                         </p>
                         <a 
                             href="#" 

@@ -91,7 +91,7 @@ export default function Features() {
             <p className="text-sm text-gray-600">Expert Insight</p>
           </div>
           <div className="bg-gray-200 rounded-lg p-4 text-center">
-            <p className="text-sm text-gray-600">Easy</p>
+            <p className="text-sm text-gray-600">Highest Returns</p>
           </div>
         </div>
       </div>

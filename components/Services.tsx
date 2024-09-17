@@ -16,7 +16,7 @@ export default function Services() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4 text-black">Make a Lasting Financial Journey With Gainify</h1>
             <p className="text-xl text-gray-600">
-              Explore what makes us exceptional in the finance industry. Experience innovative solutions, personalized services, and seamless transactions.
+            Discover what sets us apart in the finance industry. We offer tailored solutions, dedicated support, and smooth, hassle-free transactions to meet your financial needs.
             </p>
           </div>
 
