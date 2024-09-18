@@ -4,12 +4,12 @@ import Image from 'next/image';
 
 export default function HeroHome() {
   return (
-    <section className="relative bg-[#060d15] text-white h-screen overflow-visible pt-16"> {/* Added pt-16 */}
+    <section className="relative bg-[#060d15] text-white h-screen overflow-visible pt-64"> {/* Increased padding-top to move downwards */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 w-full">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 w-full mt-32">
           <div className="flex flex-col md:flex-row items-center justify-center h-full">
             {/* Content Section */}
-            <div className="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0 md:ml-16">
+            <div className="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
               {/* Join the Future Button */}
               <div className="mb-6">
                 <a
@@ -74,9 +74,9 @@ export default function HeroHome() {
             </div>
 
             {/* Image Section */}
-            <div className="w-full md:w-1/2 flex justify-center md:justify-end relative">
+            <div className="w-full md:w-1/2 flex justify-center md:justify-end relative ml-16"> {/* Shifted image section to the right with ml-16 */}
               {/* Phone Image */}
-              <div className="relative w-[270px]">
+              <div className="relative w-[250px]">
                 <Image
                   src="/images/hero-custom-04.png"
                   width={300}
@@ -93,7 +93,7 @@ export default function HeroHome() {
                   width={300}
                   height={400}
                   alt="Card"
-                  className="rounded-2xl" // Changed to 'rounded-2xl' for even more curved corners
+                  className="rounded-2xl"
                 />
               </div>
 
