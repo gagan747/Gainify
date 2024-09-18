@@ -26,7 +26,7 @@ export default function Exceptional() {
                     {/* Card Image */}
                     <div className="flex-shrink-0">
                         <img
-                            src="/path/to/card-image.png"
+                            src="/images/curve-post.png"
                             alt="Financial Card"
                             className="rounded-lg h-full"
                         />
