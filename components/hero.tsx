@@ -78,7 +78,7 @@ export default function HeroHome() {
               {/* Phone Image */}
               <div className="relative w-[250px]">
                 <Image
-                  src="/images/hero-image-02.png"
+                  src="/images/hero-custom-04.png"
                   width={300}
                   height={500}
                   alt="Phone with Balance"
