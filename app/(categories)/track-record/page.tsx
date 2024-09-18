@@ -170,40 +170,47 @@ export default function TrackRecord() {
 						</div>
 					</div>
 
-					{/* Adjusted Images in Flexbox, Side by Side */}
-					<div className="mb-12 w-full">
+					{/* Adjusted Images in Scrolling Effect */}
+					<div className="mb-12 w-full overflow-hidden">
 						<h2 className="text-2xl font-semibold mb-4 text-center">Profits Snapshots</h2>
-						<div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px' }}>
+						<div className="w-full flex space-x-2 animate-scroll">
+							{/* Repeat the images to ensure continuous scrolling */}
 							{scrollerImages.map((image, index) => (
-								<div key={index}>
+								<div key={index} className="image-wrapper">
 									<img
 										src={image}
 										alt={`Scroller Image ${index + 1}`}
 										className="rounded shadow-lg"
-										style={{ width: '150px', height: 'auto' }}
+										style={{ width: '260px', height: 'auto' }}  // Increased size further
 									/>
 								</div>
 							))}
 						</div>
 					</div>
 
-					<div className="mb-12 w-full">
-						<h2 className="text-2xl font-semibold mb-4 text-center">Our Myfxbook Results</h2>
-						<div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px' }}>
-							{images.map((image, index) => (
-								<div key={index}>
-									<img
-										src={image}
-										alt={`Myfxbook result ${index + 1}`}
-										className="rounded shadow-lg"
-										style={{ width: '150px', height: 'auto' }}
-									/>
-								</div>
-							))}
-						</div>
-					</div>
 				</div>
 			</div>
+
+			<style jsx>{`
+				.animate-scroll {
+					animation: scroll 20s linear infinite;
+					display: flex;
+					gap: 0.2rem; /* Reduced gap between images even more */
+				}
+
+				@keyframes scroll {
+					0% {
+						transform: translateX(0);
+					}
+					100% {
+						transform: translateX(-50%);
+					}
+				}
+
+				.image-wrapper {
+					padding: 5px; /* Slight padding for spacing */
+				}
+			`}</style>
 		</section>
 	);
 }

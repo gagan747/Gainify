@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function HeroHome() {
   return (
-    <section className="relative bg-[#060d15] text-white h-screen overflow-visible">
+    <section className="relative bg-[#060d15] text-white h-screen overflow-visible pt-16"> {/* Added pt-16 */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 w-full">
           <div className="flex flex-col md:flex-row items-center justify-center h-full">
