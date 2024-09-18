@@ -76,7 +76,7 @@ export default function HeroHome() {
             {/* Image Section */}
             <div className="w-full md:w-1/2 flex justify-center md:justify-end relative">
               {/* Phone Image */}
-              <div className="relative w-[250px]">
+              <div className="relative w-[270px]">
                 <Image
                   src="/images/hero-custom-04.png"
                   width={300}
@@ -87,22 +87,22 @@ export default function HeroHome() {
               </div>
 
               {/* Card Image Positioned on the right */}
-              <div className="absolute top-[40px] right-[-50px] w-[130px] sm:w-[170px]">
+              <div className="absolute top-[35px] right-[-80px] w-[130px] sm:w-[170px]">
                 <Image
-                  src="/images/hero-image-03.png"
+                  src="/images/curve-post.png"
                   width={300}
                   height={400}
                   alt="Card"
-                  className="rounded-md"
+                  className="rounded-2xl" // Changed to 'rounded-2xl' for even more curved corners
                 />
               </div>
 
               {/* "Hero-05" Image (152k+ Trusted Users) Positioned Below */}
-              <div className="absolute bottom-[-20px] right-[30px] w-[150px] sm:w-[200px]">
+              <div className="absolute bottom-[35px] right-[70px] w-[1050px] sm:w-[250px]">
                 <Image
-                  src="/images/hero-05.png"
-                  width={200}
-                  height={100}
+                  src="/images/hero-card02-01.png"
+                  width={700}
+                  height={350}
                   alt="152k Trusted Users"
                   className="rounded-md"
                 />
