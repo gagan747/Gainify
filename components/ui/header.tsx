@@ -90,6 +90,9 @@ export default function Header() {
             <Link href={"/contact-us"} className="hover:text-gray-400">
               Contact Us
             </Link>
+            <Link href={"/dashboard"} className="hover:text-gray-400">
+              Dashboard
+            </Link>
           </nav>
 
           {/* Action Button */}
