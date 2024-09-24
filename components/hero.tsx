@@ -89,9 +89,9 @@ export default function HeroHome() {
               {/* Card Image Positioned on the right */}
               <div className="absolute top-[35px] right-[-80px] w-[130px] sm:w-[170px]">
                 <Image
-                  src="/images/curve-post.png"
-                  width={300}
-                  height={400}
+                  src="/images/card-post.png"
+                  width={500}
+                  height={800}
                   alt="Card"
                   className="rounded-2xl"
                 />
@@ -100,7 +100,7 @@ export default function HeroHome() {
               {/* "Hero-05" Image (152k+ Trusted Users) Positioned Below */}
               <div className="absolute bottom-[35px] right-[70px] w-[1050px] sm:w-[250px]">
                 <Image
-                  src="/images/hero-card02-01.png"
+                  src="/images/hero-card.png"
                   width={700}
                   height={350}
                   alt="152k Trusted Users"
