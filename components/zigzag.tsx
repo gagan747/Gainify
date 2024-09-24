@@ -6,7 +6,7 @@ export default function FinanceSolutions() {
       id="finance-solutions"
       className="relative py-20"
       style={{
-        backgroundColor: '#18141c',
+        backgroundColor: '#131016',
       }}
     >
       {/* Background wrapper for the two background images */}
