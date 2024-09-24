@@ -77,23 +77,7 @@ export default function Header() {
           </div>
 
           {/* Navigation */}
-          <nav className="hidden md:flex md:space-x-6">
-            <Link href={"/track-record"} className="hover:text-gray-400">
-              Track Record
-            </Link>
-            <Link href={"/about-us"} className="hover:text-gray-400">
-              About Us
-            </Link>
-            <Link href={"/our-services"} className="hover:text-gray-400">
-              Our Services
-            </Link>
-            <Link href={"/contact-us"} className="hover:text-gray-400">
-              Contact Us
-            </Link>
-            <Link href={"/dashboard"} className="hover:text-gray-400">
-              Dashboard
-            </Link>
-          </nav>
+          {newFunction()}
 
           {/* Action Button */}
           <div className="hidden md:block">
@@ -127,4 +111,24 @@ export default function Header() {
       </div>
     </header>
   );
+
+  function newFunction() {
+    return <nav className="hidden md:flex md:space-x-6">
+      <Link href={"/track-record"} className="hover:text-gray-400">
+        Track Record
+      </Link>
+      <Link href={"/about-us"} className="hover:text-gray-400">
+        About Us
+      </Link>
+      <Link href={"/our-services"} className="hover:text-gray-400">
+        Our Services
+      </Link>
+      <Link href={"/contact-us"} className="hover:text-gray-400">
+        Contact Us
+      </Link>
+      <Link href={"/dashboard"} className="hover:text-gray-400">
+        Dashboard
+      </Link>
+    </nav>;
+  }
 }
