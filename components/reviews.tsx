@@ -1,7 +1,7 @@
 'use client'
 export default function Reviews() {
   return (
-    <section className='bg-[#18141c] text-white'>
+    <section className='bg-[#111111] text-white'>
       {/* Header */}
       <div className='text-center mb-12'>
         <h1 className='text-2xl font-semibold pt-4'>
