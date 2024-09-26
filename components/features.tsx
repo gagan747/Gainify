@@ -1,7 +1,10 @@
+import { FaShieldAlt, FaHandsHelping, FaWallet, FaChartLine, FaUserTie, FaLightbulb, FaCog } from 'react-icons/fa';
+
 export default function Features() {
   return (
-    <section className="bg-blue-100 py-16 relative"> {/* Faded blue background color */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white to-transparent h-128"></div> {/* Increased height of gradient effect */}
+    <section className="bg-blue-100 py-16 relative">
+      {/* Faded blue background color */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-transparent h-128"></div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         {/* "Extra Features" Button */}
         <div className="text-center mb-8">
@@ -23,9 +26,9 @@ export default function Features() {
         {/* Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* 1st Feature Card */}
-          <div className="bg-white rounded-3xl shadow-md p-8 text-center transition-transform duration-300 hover:shadow-lg hover:-translate-y-2">
-            <div className="bg-white w-16 h-16 rounded-full shadow-lg mb-6 flex items-center justify-center mx-auto relative"> {/* Centering the circle */}
-              <div className="absolute inset-0 rounded-full shadow-[0_0_10px_rgba(0,0,0,0.2)]"></div> {/* Blurry shadow effect */}
+          <div className="bg-white rounded-xl shadow-md p-8 text-center transition-transform duration-300 hover:shadow-lg hover:-translate-y-2">
+            <div className="bg-white w-16 h-16 rounded-full shadow-lg mb-6 flex items-center justify-center mx-auto relative">
+              <div className="absolute inset-0 rounded-full shadow-[0_0_10px_rgba(0,0,0,0.2)]"></div>
               <img
                 src="/images/icon-01.png"
                 alt="Financial Goals"
@@ -40,9 +43,9 @@ export default function Features() {
           </div>
 
           {/* 2nd Feature Card */}
-          <div className="bg-white rounded-3xl shadow-md p-8 text-center transition-transform duration-300 hover:shadow-lg hover:-translate-y-2">
-            <div className="bg-white w-16 h-16 rounded-full shadow-lg mb-6 flex items-center justify-center mx-auto relative"> {/* Centering the circle */}
-              <div className="absolute inset-0 rounded-full shadow-[0_0_10px_rgba(0,0,0,0.2)]"></div> {/* Blurry shadow effect */}
+          <div className="bg-white rounded-xl shadow-md p-8 text-center transition-transform duration-300 hover:shadow-lg hover:-translate-y-2">
+            <div className="bg-white w-16 h-16 rounded-full shadow-lg mb-6 flex items-center justify-center mx-auto relative">
+              <div className="absolute inset-0 rounded-full shadow-[0_0_10px_rgba(0,0,0,0.2)]"></div>
               <img
                 src="/images/icon-02.png"
                 alt="Portfolio Tracker"
@@ -57,9 +60,9 @@ export default function Features() {
           </div>
 
           {/* 3rd Feature Card */}
-          <div className="bg-white rounded-3xl shadow-md p-8 text-center transition-transform duration-300 hover:shadow-lg hover:-translate-y-2">
-            <div className="bg-white w-16 h-16 rounded-full shadow-lg mb-6 flex items-center justify-center mx-auto relative"> {/* Centering the circle */}
-              <div className="absolute inset-0 rounded-full shadow-[0_0_10px_rgba(0,0,0,0.2)]"></div> {/* Blurry shadow effect */}
+          <div className="bg-white rounded-xl shadow-md p-8 text-center transition-transform duration-300 hover:shadow-lg hover:-translate-y-2">
+            <div className="bg-white w-16 h-16 rounded-full shadow-lg mb-6 flex items-center justify-center mx-auto relative">
+              <div className="absolute inset-0 rounded-full shadow-[0_0_10px_rgba(0,0,0,0.2)]"></div>
               <img
                 src="/images/icon-03.png"
                 alt="Financial Education"
@@ -74,28 +77,35 @@ export default function Features() {
           </div>
         </div>
 
-        {/* New Section with Seven Less Curvy Small Boxes */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
-          <div className="bg-white rounded-2xl p-4 text-center">
-            <p className="text-sm text-gray-600">Secure</p>
+        {/* Small Boxes with Icons and Text */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-8">
+          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 mx-auto">
+            <FaShieldAlt className="text-blue-600 text-lg" />
+            <p className="text-base text-gray-600">Secure</p>
           </div>
-          <div className="bg-white rounded-2xl p-4 text-center">
-            <p className="text-sm text-gray-600">Investment Assistance</p>
+          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 mx-auto">
+            <FaHandsHelping className="text-blue-600 text-lg" />
+            <p className="text-base text-gray-600">Investment Assistance</p>
           </div>
-          <div className="bg-white rounded-2xl p-4 text-center">
-            <p className="text-sm text-gray-600">Financial Security</p>
+          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 mx-auto">
+            <FaWallet className="text-blue-600 text-lg" />
+            <p className="text-base text-gray-600">Financial Security</p>
           </div>
-          <div className="bg-white rounded-2xl p-4 text-center">
-            <p className="text-sm text-gray-600">Personalized Plans</p>
+          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 mx-auto">
+            <FaChartLine className="text-blue-600 text-lg" />
+            <p className="text-base text-gray-600">Personalized Plans</p>
           </div>
-          <div className="bg-white rounded-2xl p-4 text-center">
-            <p className="text-sm text-gray-600">Investment Advisors</p>
+          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 mx-auto">
+            <FaUserTie className="text-blue-600 text-lg" />
+            <p className="text-base text-gray-600">Investment Advisors</p>
           </div>
-          <div className="bg-white rounded-2xl p-4 text-center">
-            <p className="text-sm text-gray-600">Expert Insight</p>
+          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 mx-auto">
+            <FaLightbulb className="text-blue-600 text-lg" />
+            <p className="text-base text-gray-600">Expert Insight</p>
           </div>
-          <div className="bg-white rounded-2xl p-4 text-center">
-            <p className="text-sm text-gray-600">Highest Returns</p>
+          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 mx-auto">
+            <FaCog className="text-blue-600 text-lg" />
+            <p className="text-base text-gray-600">Highest Returns</p>
           </div>
         </div>
       </div>

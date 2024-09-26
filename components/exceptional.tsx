@@ -21,24 +21,36 @@ export default function Exceptional() {
                 </div>
 
                 {/* Feature Card */}
-                <div className="bg-black text-white rounded-lg shadow-md p-8 flex items-center" style={{ height: '350px' }}>
+                <div 
+                    className="bg-black text-white rounded-3xl shadow-lg p-8 flex items-center" 
+                    style={{ height: '400px' }}
+                >
                     
                     {/* Card Image */}
                     <div className="flex-shrink-0">
                         <img
                             src="/images/curve-post.png"
                             alt="Financial Card"
-                            className="rounded-lg h-full"
+                            className="rounded-2xl h-full"
                         />
                     </div>
 
                     {/* Card Content */}
-                    <div className="ml-6 flex-1">
-                        <h2 className="text-2xl font-semibold mb-4">
-                            Redefine Your Trading Experience with Gainify
+                    <div className="ml-36 flex-1">
+                        <h2 className="text-3xl font-semibold mb-0">
+                            Redefine Your 
                         </h2>
+                        <h2 className="text-3xl font-semibold mb-0">
+                        Trading Experience 
+                        </h2>
+                        <h2 className="text-3xl font-semibold mb-4">
+                             with Gainify
+                        </h2>
+                        <p className="text-gray-400 mb-0">
+                            Highest Returns in the industry, Financial freedom,
+                        </p>
                         <p className="text-gray-400 mb-6">
-                            Highest Returns in the industry, Financial freedom, Professionol management, and seamless transactions.
+                           professional management, and seamless transactions.
                         </p>
                         <a 
                             href="#" 

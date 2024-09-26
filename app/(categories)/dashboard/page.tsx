@@ -3,9 +3,11 @@
 import { FaHome, FaFileContract, FaFileInvoice, FaCreditCard, FaLifeRing, FaTicketAlt } from 'react-icons/fa';
 import { useRouter } from 'next/navigation';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { useState } from 'react';
 
 export default function Dashboard() {
     const router = useRouter();
+    const [showTransactions, setShowTransactions] = useState(true); // Conditional rendering flag
 
     // Example data for the chart
     const data = [
@@ -26,7 +28,6 @@ export default function Dashboard() {
                     <div className='container mx-auto px-4'>
                         {/* Outer large rectangle */}
                         <div className='bg-white p-8 mt-16 rounded-3xl text-left' style={{ height: '40rem' }}>
-                            <h1 className="text-2xl text-black font-bold -mb-9">MY PORTFOLIO</h1>
 
                             {/* 2x2 grid of boxes INSIDE the large rectangle */}
                             <div className='grid grid-cols-2 gap-4 mt-8 relative'>
@@ -60,15 +61,17 @@ export default function Dashboard() {
                                     </div>
                                 </div>
 
-                                {/* Box 3 */}
-                                <div className='bg-white p-1 rounded-3xl w-96 h-[22rem] relative -translate-y-20 border border-black z-0'>
-                                 <h2 className="text-xl font-semibold mb-4 mt-20 text-black">Transaction History</h2>
-                                  <ul className="list-disc pl-4 mt-10 text-black">
-                                    <li>Transaction 1</li>
-                                    <li>Transaction 2</li>
-                                    <li>Transaction 3</li>
-                                    </ul>
+                                {/* Conditionally render Box 3 */}
+                                {showTransactions && (
+                                    <div className='bg-white p-1 rounded-3xl w-96 h-[22rem] relative -translate-y-20 border border-black z-0'>
+                                        <h2 className="text-xl font-semibold mb-4 mt-20 text-black">Transaction History</h2>
+                                        <ul className="list-disc pl-4 mt-10 text-black">
+                                            <li>Transaction 1</li>
+                                            <li>Transaction 2</li>
+                                            <li>Transaction 3</li>
+                                        </ul>
                                     </div>
+                                )}
 
                                 {/* Box 4 with the Bar Chart and 3 additional boxes */}
                                 <div className='bg-gray-700 p-8 rounded-3xl w-100 h-[20rem] -ml-40 -mt-11 flex'>
@@ -89,15 +92,15 @@ export default function Dashboard() {
 
                                     {/* 20% container with 3 smaller vertical boxes */}
                                     <div className="w-[20%] flex flex-col space-y-2">
-                                        <div className="bg-gray-600 p-2 h-[5rem] rounded-lg text-white"> {/* Reduced height */}
+                                        <div className="bg-gray-600 p-2 h-[5rem] rounded-lg text-white">
                                             <h3 className="text-md font-bold">Monthly Gains</h3>
                                             <p>+10%</p>
                                         </div>
-                                        <div className="bg-gray-600 p-2 h-[5rem] rounded-lg text-white"> {/* Reduced height */}
+                                        <div className="bg-gray-600 p-2 h-[5rem] rounded-lg text-white">
                                             <h3 className="text-md font-bold">Weekly Gains</h3>
                                             <p>+5%</p>
                                         </div>
-                                        <div className="bg-gray-600 p-2 h-[5rem] rounded-lg text-white"> {/* Reduced height */}
+                                        <div className="bg-gray-600 p-2 h-[5rem] rounded-lg text-white">
                                             <h3 className="text-md font-bold">Yesterday's Gains</h3>
                                             <p>+2%</p>
                                         </div>
@@ -109,79 +112,79 @@ export default function Dashboard() {
                 </div>
 
                 {/* Sidebar */}
-<div className='bg-[#1a202c] text-white w-64 p-4'>
-    {/* Welcome Message */}
-    <div className='mb-6 mt-16'>
-        <h2 className='text-2xl font-semibold'>WELCOME BACK</h2>
-    </div>
+                <div className='bg-[#1a202c] text-white w-64 p-4'>
+                    {/* Welcome Message */}
+                    <div className='mb-6 mt-16'>
+                        <h2 className='text-2xl font-semibold'>WELCOME BACK</h2>
+                    </div>
 
-    {/* Logo and Name */}
-    <div className='flex items-center mb-8'>
-        <div className='bg-gradient-to-r from-green-400 to-blue-500 w-10 h-10 rounded-full flex items-center justify-center'>
-            {/* Placeholder for the logo */}
-        </div>
-        <span className='ml-3 text-2xl font-semibold'>Hydar</span>
-    </div>
+                    {/* Logo and Name */}
+                    <div className='flex items-center mb-8'>
+                        <div className='bg-gradient-to-r from-green-400 to-blue-500 w-10 h-10 rounded-full flex items-center justify-center'>
+                            {/* Placeholder for the logo */}
+                        </div>
+                        <span className='ml-3 text-2xl font-semibold'>Hydar</span>
+                    </div>
 
-    <div className='mb-4'>
-        <ul>
-            <li className='mb-2'>
-                <div
-                    onClick={() => router.push('/dashboard/home')}
-                    className='flex items-center space-x-2 p-3 rounded hover:bg-gray-700 cursor-pointer'>
-                    <FaHome />
-                    <span className='text-lg'>Home</span>
-                </div>
-            </li>
-            <li>
-                <div
-                    onClick={() => router.push('/dashboard/contracts')}
-                    className='flex items-center space-x-2 p-3 rounded hover:bg-gray-700 cursor-pointer'>
-                    <FaFileContract />
-                    <span className='text-lg'>My Portfolio</span>
-                </div>
-            </li>
-        </ul>
-    </div>
+                    <div className='mb-4'>
+                        <ul>
+                            <li className='mb-2'>
+                                <div
+                                    onClick={() => router.push('/dashboard/home')}
+                                    className='flex items-center space-x-2 p-3 rounded hover:bg-gray-700 cursor-pointer'>
+                                    <FaHome />
+                                    <span className='text-lg'>Home</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div
+                                    onClick={() => router.push('/dashboard/contracts')}
+                                    className='flex items-center space-x-2 p-3 rounded hover:bg-gray-700 cursor-pointer'>
+                                    <FaFileContract />
+                                    <span className='text-lg'>My Portfolio</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
 
-    <div className='mb-4'>
-        <ul>
-            <li className='mb-2'>
-                <div
-                    onClick={() => router.push('/dashboard/invoices')}
-                    className='flex items-center space-x-2 p-4 rounded hover:bg-gray-700 cursor-pointer'>
-                    <FaFileInvoice />
-                    <span className='text-lg'>Transactions</span>
-                </div>
-            </li>
-            <li>
-                <div
-                    onClick={() => router.push('/dashboard/cards')}
-                    className='flex items-center space-x-2 p-3 rounded hover:bg-gray-700 cursor-pointer'>
-                    <FaCreditCard />
-                    <span className='text-lg'>Contracts</span>
-                </div>
-            </li>
-        </ul>
-    </div>
+                    <div className='mb-4'>
+                        <ul>
+                            <li className='mb-2'>
+                                <div
+                                    onClick={() => router.push('/dashboard/invoices')}
+                                    className='flex items-center space-x-2 p-4 rounded hover:bg-gray-700 cursor-pointer'>
+                                    <FaFileInvoice />
+                                    <span className='text-lg'>Transactions</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div
+                                    onClick={() => router.push('/dashboard/cards')}
+                                    className='flex items-center space-x-2 p-3 rounded hover:bg-gray-700 cursor-pointer'>
+                                    <FaCreditCard />
+                                    <span className='text-lg'>Contracts</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
 
-    <div className='mb-4'>
-        <ul>
-            <li className='mb-2'>
-                <a href='#' className='flex items-center space-x-2 p-3 rounded hover:bg-gray-700 cursor-pointer'>
-                    <FaLifeRing />
-                    <span className='text-lg'>Statistics</span>
-                </a>
-            </li>
-            <li>
-                <a href='#' className='flex items-center space-x-2 p-3 rounded hover:bg-gray-700 cursor-pointer'>
-                    <FaTicketAlt />
-                    <span className='text-lg'>Help</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
+                    <div className='mb-4'>
+                        <ul>
+                            <li className='mb-2'>
+                                <a href='#' className='flex items-center space-x-2 p-3 rounded hover:bg-gray-700 cursor-pointer'>
+                                    <FaLifeRing />
+                                    <span className='text-lg'>Statistics</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#' className='flex items-center space-x-2 p-3 rounded hover:bg-gray-700 cursor-pointer'>
+                                    <FaTicketAlt />
+                                    <span className='text-lg'>Help</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     );

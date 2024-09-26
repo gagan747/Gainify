@@ -2,7 +2,30 @@ import { FaDownload, FaStar, FaUsers, FaWallet, FaPiggyBank, FaThumbsUp } from '
 
 export default function UserSatisfaction() {
   return (
-    <section id="user-satisfaction" className="bg-[#080c14] text-white py-12">
+    <section id="user-satisfaction" className="bg-[#080c14] text-white py-12 relative">
+      {/* Yellow Shade Image */}
+      <div
+          className="absolute top-0 left-0 w-1/2 h-full"
+          style={{
+            backgroundImage: 'url("/images/yellow-shade.png")',
+            backgroundSize: '250px',
+            backgroundPosition: 'top 200px left',
+            backgroundRepeat: 'no-repeat',
+            filter: 'blur(150px)', // Apply blur only to the background image
+          }}
+        ></div>
+        {/* Blue Shade Image */}
+      <div
+        className="absolute bottom-0 right-0 w-1/2 h-full"
+        style={{
+          backgroundImage: 'url("/images/blue-shade.png")',
+          backgroundSize: '300px',
+          backgroundPosition: 'bottom right',
+          backgroundRepeat: 'no-repeat',
+          filter: 'blur(150px)', // Apply blur only to the background image
+        }}
+      ></div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Left Side (Heading) */}
@@ -12,28 +35,28 @@ export default function UserSatisfaction() {
                 USER SATISFACTION
               </button>
               <h3 className="text-4xl font-bold">
-			  Trusted by Customers, Proven in Markets – Your Reliable Partner for Secure Investments and Financial Growth.
+                Trusted by Customers, Proven in Markets – Your Reliable Partner for Secure Investments and Financial Growth.
               </h3>
             </div>
           </div>
 
-          {/* Right Side (Boxes) */}
+          {/* Right Side (Upper Boxes with white background and curvy corners) */}
           <div className="flex flex-col md:w-1/2 space-y-4 mt-8 md:mt-0">
-            <div className="bg-gray-800 p-8 rounded-lg shadow-lg flex items-center justify-between hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white p-8 rounded-3xl shadow-lg flex items-center justify-between hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center space-x-4">
                 <FaDownload className="text-blue-500 text-5xl" />
                 <div>
                   <p className="text-5xl font-bold text-blue-500">$150k+</p>
-                  <p className="mt-2 text-lg text-gray-200">Funds under Management</p>
+                  <p className="mt-2 text-lg text-gray-700">Funds under Management</p>
                 </div>
               </div>
             </div>
-            <div className="bg-gray-800 p-8 rounded-lg shadow-lg flex items-center justify-between hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white p-8 rounded-3xl shadow-lg flex items-center justify-between hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center space-x-4">
                 <FaStar className="text-blue-500 text-5xl" />
                 <div>
                   <p className="text-5xl font-bold text-blue-500">300+</p>
-                  <p className="mt-2 text-lg text-gray-200">Investor Community</p>
+                  <p className="mt-2 text-lg text-gray-700">Investor Community</p>
                 </div>
               </div>
             </div>
@@ -42,7 +65,7 @@ export default function UserSatisfaction() {
 
         {/* Bottom Row (Smaller Boxes) */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
-          <div className="bg-gray-800 p-8 rounded-lg text-center hover:scale-105 transition-transform duration-300">
+          <div className="bg-gray-800 p-8 rounded-3xl text-center hover:scale-105 transition-transform duration-300">
             <div className="flex justify-center items-center space-x-4">
               <FaUsers className="text-2xl text-blue-500" />
               <div>
@@ -51,7 +74,7 @@ export default function UserSatisfaction() {
               </div>
             </div>
           </div>
-          <div className="bg-gray-800 p-8 rounded-lg text-center hover:scale-105 transition-transform duration-300">
+          <div className="bg-gray-800 p-8 rounded-3xl text-center hover:scale-105 transition-transform duration-300">
             <div className="flex justify-center items-center space-x-4">
               <FaWallet className="text-2xl text-blue-500" />
               <div>
@@ -60,7 +83,7 @@ export default function UserSatisfaction() {
               </div>
             </div>
           </div>
-          <div className="bg-gray-800 p-8 rounded-lg text-center hover:scale-105 transition-transform duration-300">
+          <div className="bg-gray-800 p-8 rounded-3xl text-center hover:scale-105 transition-transform duration-300">
             <div className="flex justify-center items-center space-x-4">
               <FaPiggyBank className="text-2xl text-blue-500" />
               <div>
@@ -69,7 +92,7 @@ export default function UserSatisfaction() {
               </div>
             </div>
           </div>
-          <div className="bg-gray-800 p-8 rounded-lg text-center hover:scale-105 transition-transform duration-300">
+          <div className="bg-gray-800 p-8 rounded-3xl text-center hover:scale-105 transition-transform duration-300">
             <div className="flex justify-center items-center space-x-4">
               <FaThumbsUp className="text-2xl text-blue-500" />
               <div>
