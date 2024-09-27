@@ -1,20 +1,21 @@
-import { FaDownload, FaStar, FaUsers, FaWallet, FaPiggyBank, FaThumbsUp } from 'react-icons/fa';
+import { FaStar, FaUsers, FaWallet, FaPiggyBank, FaThumbsUp } from 'react-icons/fa';
 
 export default function UserSatisfaction() {
   return (
     <section id="user-satisfaction" className="bg-[#080c14] text-white py-12 relative">
       {/* Yellow Shade Image */}
       <div
-          className="absolute top-0 left-0 w-1/2 h-full"
-          style={{
-            backgroundImage: 'url("/images/yellow-shade.png")',
-            backgroundSize: '250px',
-            backgroundPosition: 'top 200px left',
-            backgroundRepeat: 'no-repeat',
-            filter: 'blur(150px)', // Apply blur only to the background image
-          }}
-        ></div>
-        {/* Blue Shade Image */}
+        className="absolute top-0 left-0 w-1/2 h-full"
+        style={{
+          backgroundImage: 'url("/images/yellow-shade.png")',
+          backgroundSize: '250px',
+          backgroundPosition: 'top 200px left',
+          backgroundRepeat: 'no-repeat',
+          filter: 'blur(130px)',
+        }}
+      ></div>
+
+      {/* Blue Shade Image */}
       <div
         className="absolute bottom-0 right-0 w-1/2 h-full"
         style={{
@@ -22,7 +23,7 @@ export default function UserSatisfaction() {
           backgroundSize: '300px',
           backgroundPosition: 'bottom right',
           backgroundRepeat: 'no-repeat',
-          filter: 'blur(150px)', // Apply blur only to the background image
+          filter: 'blur(150px)',
         }}
       ></div>
 
@@ -40,30 +41,61 @@ export default function UserSatisfaction() {
             </div>
           </div>
 
-          {/* Right Side (Upper Boxes with white background and curvy corners) */}
-          <div className="flex flex-col md:w-1/2 space-y-4 mt-8 md:mt-0">
-            <div className="bg-white p-8 rounded-3xl shadow-lg flex items-center justify-between hover:shadow-xl transition-shadow duration-300">
-              <div className="flex items-center space-x-4">
-                <FaDownload className="text-blue-500 text-5xl" />
-                <div>
-                  <p className="text-5xl font-bold text-blue-500">$150k+</p>
-                  <p className="mt-2 text-lg text-gray-700">Funds under Management</p>
+          {/* Right Side (Upper Boxes with translucent grayish background) */}
+          <div className="flex flex-col md:w-1/2 space-y-3 mt-8 md:mt-0">
+            {/* First Box (Funds under Management) */}
+            <div className="relative">
+              {/* Translucent Gray Background Box */}
+              <div className="absolute -top-1.5 left-9 w-[88%] h-[110%] bg-[rgba(255,255,255,0.2)] rounded-3xl backdrop-blur-md"></div>
+
+              {/* White Box with Blue Gradient */}
+              <div
+                className="p-4 w-[85%] mx-auto rounded-3xl shadow-lg flex items-center justify-between hover:shadow-xl transition-shadow duration-300 relative"
+                style={{
+                  background: 'linear-gradient(to right, #ffffff 60%, #e0f2ff)', // White to Blue Gradient
+                }}
+              >
+                <div className="flex flex-col items-start"> {/* Left side for $150k+ */}
+                  <p className="text-5xl font-bold text-blue-500 ml-20"> {/* Adjusted margin */}
+                    $150k+
+                  </p>
+                </div>
+                <div className="flex flex-col items-end"> {/* Right side for Funds under Management */}
+                  <p className="mt-2 text-lg text-gray-700 mr-20"> {/* Adjusted margin */}
+                    Funds under Management
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="bg-white p-8 rounded-3xl shadow-lg flex items-center justify-between hover:shadow-xl transition-shadow duration-300">
-              <div className="flex items-center space-x-4">
-                <FaStar className="text-blue-500 text-5xl" />
-                <div>
-                  <p className="text-5xl font-bold text-blue-500">300+</p>
-                  <p className="mt-2 text-lg text-gray-700">Investor Community</p>
+
+            {/* Second Box (Investor Community) */}
+            <div className="relative">
+              {/* Translucent Gray Background Box */}
+              <div className="absolute top-1 left-9 w-[88%] h-[110%] bg-[rgba(255,255,255,0.2)] rounded-3xl backdrop-blur-md"></div>
+
+              {/* White Box with Blue Gradient */}
+              <div
+                className="p-4 w-[85%] mx-auto top-2 rounded-3xl shadow-lg flex items-center justify-between hover:shadow-xl transition-shadow duration-300 relative"
+                style={{
+                  background: 'linear-gradient(to right, #ffffff 60%, #e0f2ff)', // White to Blue Gradient
+                }}
+              >
+                <div className="flex flex-col items-start"> {/* Left side for 300+ */}
+                  <p className="text-5xl font-bold text-blue-500 ml-20"> {/* Adjusted margin */}
+                    300+
+                  </p>
+                </div>
+                <div className="flex flex-col items-end"> {/* Right side for Investor Community */}
+                  <p className="mt-2 text-lg text-gray-700 mr-20"> {/* Adjusted margin */}
+                    Investor Community
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Row (Smaller Boxes) */}
+        {/* Bottom Row (Smaller Boxes, unchanged) */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
           <div className="bg-gray-800 p-8 rounded-3xl text-center hover:scale-105 transition-transform duration-300">
             <div className="flex justify-center items-center space-x-4">

@@ -43,23 +43,24 @@ export default function Dashboard() {
                                 </div>
 
                                 {/* Box 2 */}
-                                <div className='bg-gray-700 p-8 rounded-3xl w-100 h-[12rem] -ml-40'>
-                                    <h2 className="text-xl font-semibold text-white mb-4">Plan Type: Monthly Withdrawals</h2>
-                                    <div className="grid grid-cols-3 gap-4 text-white">
-                                        <div className="bg-gray-600 p-4 rounded-lg">
-                                            <h3 className="text-lg font-bold">Total Deposit</h3>
-                                            <p className="text-xl">$200,000.22</p>
-                                        </div>
-                                        <div className="bg-gray-600 p-4 rounded-lg">
-                                            <h3 className="text-lg font-bold">Total Withdrawals</h3>
-                                            <p className="text-xl">$200,000.23</p>
-                                        </div>
-                                        <div className="bg-gray-600 p-4 rounded-lg">
-                                            <h3 className="text-lg font-bold">Overall Gains</h3>
-                                            <p className="text-xl">$200,000.23</p>
-                                        </div>
-                                    </div>
-                                </div>
+<div className='bg-white border-2 border-black p-8 rounded-3xl w-100 h-[12rem] -ml-40'>
+    <h2 className="text-xl font-semibold text-black mb-4">Plan Type: Monthly Withdrawals</h2>
+    <div className="grid grid-cols-3 gap-4 text-black">
+        <div className="bg-gray-200 p-4 rounded-lg border border-black">
+            <h3 className="text-lg font-bold">Total Deposit</h3>
+            <p className="text-xl">$200,000.22</p>
+        </div>
+        <div className="bg-gray-200 p-4 rounded-lg border border-black">
+            <h3 className="text-lg font-bold">Total Withdrawals</h3>
+            <p className="text-xl">$200,000.23</p>
+        </div>
+        <div className="bg-gray-200 p-4 rounded-lg border border-black">
+            <h3 className="text-lg font-bold">Overall Gains</h3>
+            <p className="text-xl">$200,000.23</p>
+        </div>
+    </div>
+</div>
+
 
                                 {/* Conditionally render Box 3 */}
                                 {showTransactions && (
