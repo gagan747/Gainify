@@ -98,16 +98,17 @@ export default function HeroHome() {
               </div>
 
               {/* "Hero-05" Image (152k+ Trusted Users) Positioned Below */}
-              <div className="absolute bottom-[35px] right-[70px] w-[1050px] sm:w-[250px]">
-                <Image
-                  src="/images/hero-card.png"
-                  width={700}
-                  height={350}
-                  alt="152k Trusted Users"
-                  className="rounded-md"
-                />
-              </div>
-            </div>
+<div className="absolute bottom-[40px] right-[70px] w-[250px] sm:w-[250px]"> {/* Increased height and adjusted position */}
+  <Image
+    src="/images/hero-card.png"
+    width={512} // Intrinsic width
+    height={166} // Intrinsic height
+    alt="152k Trusted Users"
+    className="rounded-md w-full h-auto" // Maintain aspect ratio
+    style={{ maxWidth: '250px', maxHeight: '80px' }} // Slightly larger size
+  />
+</div>
+</div>
           </div>
         </div>
       </div>

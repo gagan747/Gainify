@@ -91,7 +91,14 @@ export default function TrackRecord() {
 		<section className='relative w-full'>
 			<div className='max-w-6xl mx-auto px-4 sm:px-6 w-full'>
 				<div className='pt-32 pb-12 md:pt-40 md:pb-20 w-full'>
-					<h1 className='text-4xl font-bold mb-4 text-center'>Gainify Track Record</h1>
+					{/* New Button Section */}
+					<div className="text-center mb-8">
+						<button className="px-4 py-2 bg-blue-600 text-white rounded shadow-md hover:bg-blue-500">
+							Track Record
+						</button>
+					</div>
+
+					<h1 className='text-4xl font-bold mb-4 text-center'>Gainify Performance Metrices</h1>
 					<p className='text-center text-lg max-w-prose mx-auto mb-8'>
 						Our results speak volumes. Over the past year, Gainify has consistently outpaced our own benchmarks, delivering impressive returns. Explore the detailed performance charts and data tables below to see our success in action.
 					</p>
@@ -177,40 +184,13 @@ export default function TrackRecord() {
 							{/* Repeat the images to ensure continuous scrolling */}
 							{scrollerImages.map((image, index) => (
 								<div key={index} className="image-wrapper">
-									<img
-										src={image}
-										alt={`Scroller Image ${index + 1}`}
-										className="rounded shadow-lg"
-										style={{ width: '260px', height: 'auto' }}  // Increased size further
-									/>
+									<img src={image} alt={`snapshot-${index}`} className="h-48 w-48 object-cover" />
 								</div>
 							))}
 						</div>
 					</div>
-
 				</div>
 			</div>
-
-			<style jsx>{`
-				.animate-scroll {
-					animation: scroll 20s linear infinite;
-					display: flex;
-					gap: 0.2rem; /* Reduced gap between images even more */
-				}
-
-				@keyframes scroll {
-					0% {
-						transform: translateX(0);
-					}
-					100% {
-						transform: translateX(-50%);
-					}
-				}
-
-				.image-wrapper {
-					padding: 5px; /* Slight padding for spacing */
-				}
-			`}</style>
 		</section>
 	);
 }
