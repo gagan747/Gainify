@@ -59,58 +59,71 @@ export default function Header() {
   }, []);
 
   return (
-    <header
-      className="fixed w-full bg-[#060d15] text-white" // Updated background color
-      style={{ zIndex: 999, fontFamily: "'Inter', sans-serif" }} // Apply the Inter font here
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <div className="shrink-0" style={{marginLeft:"-1px"}}>
-            <Link href="/" aria-label="Gainify">
-              <img
-                src={"/images/logo-nobg.png"}
-                style={{ width: "13rem" }}
-                alt="Logo"
-              />
-            </Link>
-          </div>
+			<header
+				className='fixed w-full bg-[#060d15] text-white' // Updated background color
+				style={{ zIndex: 999, fontFamily: "'Inter', sans-serif" }} // Apply the Inter font here
+			>
+				<div className='max-w-7xl mx-auto px-4 sm:px-6'>
+					<div className='flex items-center justify-between h-20'>
+						{/* Logo */}
+						<div className='logo-main'>
+							<Link href='/' aria-label='Gainify'>
+								<img
+									src={'/images/logo-nobg.png'}
+									style={{ width: '200px' }}
+									alt='Logo'
+								/>
+							</Link>
+						</div>
 
-          {/* Navigation */}
-          {newFunction()}
+						{/* Navigation */}
+						{newFunction()}
 
-          {/* Action Button */}
-          <div className="hidden md:block">
-            {!isAuthorized.value && (
-              <Link
-                href="/signin"
-                className="px-4 py-2 rounded-md border border-gray-600 bg-transparent text-white hover:bg-gray-700 flex items-center transition duration-150 ease-in-out"
-              >
-                Sign in
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  stroke="currentColor"
-                  className="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M5 12h14M12 5l7 7-7 7"
-                  />
-                </svg>
-              </Link>
-            )}
-          </div>
+						{/* Action Button */}
+						<div className='hidden md:block'>
+							{!isAuthorized.value && (
+								<Link
+									href='/signin'
+									className='px-4 py-2 rounded-md border border-gray-600 bg-transparent text-white hover:bg-gray-700 flex items-center transition duration-150 ease-in-out'>
+									Sign in
+									<svg
+										xmlns='http://www.w3.org/2000/svg'
+										fill='none'
+										stroke='currentColor'
+										className='w-4 h-4 ml-2'
+										viewBox='0 0 24 24'
+										strokeWidth={2}>
+										<path
+											strokeLinecap='round'
+											strokeLinejoin='round'
+											d='M5 12h14M12 5l7 7-7 7'
+										/>
+									</svg>
+								</Link>
+							)}
+						</div>
 
-          {/* Mobile Menu */}
-          <MobileMenu isAuthorized={isAuthorized} />
-        </div>
-      </div>
-    </header>
-  );
+						{/* Mobile Menu */}
+						<MobileMenu isAuthorized={isAuthorized} />
+					</div>
+				</div>
+				<style jsx>{`
+					@media (max-width: 1219px) {
+						.logo-main {
+							position: relative;
+							left: -58px;
+						}
+					}
+					@media (max-width: 369px) {
+						.logo-main {
+							width: 170px !important;
+							top: -5px;
+							left: -48px;
+						}
+					}
+				`}</style>
+			</header>
+		);
 
   function newFunction() {
     return <nav className="hidden md:flex md:space-x-6">

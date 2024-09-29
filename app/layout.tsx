@@ -26,21 +26,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Provider store={store}>
-      <html lang="en">
-        <head>
-          <title>Gainify</title>
-        </head>
-        <body
-          className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-gray-900 text-gray-200 tracking-tight`}
-        >
-          <div className="flex flex-col min-h-screen overflow-hidden bg-black font-poppins">
-            <Header />
-            {children}
-            <Banner />
-          </div>
-        </body>
-      </html>
-    </Provider>
-  );
+			<Provider store={store}>
+				<html lang='en'>
+					<head>
+						<title>Gainify</title>
+					</head>
+					<body
+						className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-gray-900 text-gray-200 tracking-tight`}>
+						<div className='flex flex-col min-h-screen overflow-hidden bg-black font-poppins'>
+							<Header />
+							{children}
+							<Banner />
+						</div>
+					</body>
+				</html>
+				<style jsx>{`
+					@media (max-width: 369px) {
+          body{
+					font-size: 10px !important
+        }
+					}
+				`}</style>
+			</Provider>
+		);
 }
