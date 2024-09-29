@@ -63,10 +63,10 @@ export default function Header() {
       className="fixed w-full bg-[#060d15] text-white" // Updated background color
       style={{ zIndex: 999, fontFamily: "'Inter', sans-serif" }} // Apply the Inter font here
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="shrink-0">
+          <div className="shrink-0" style={{marginLeft:"-1px"}}>
             <Link href="/" aria-label="Gainify">
               <img
                 src={"/images/logo-nobg.png"}

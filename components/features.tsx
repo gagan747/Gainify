@@ -78,32 +78,32 @@ export default function Features() {
         </div>
 
         {/* Small Boxes with Icons and Text */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-8">
-          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 mx-auto">
+        <div className="mt-8" style={{display:'flex', justifyContent:'center',flexWrap:'wrap',alignContent:'space-around'}}>
+          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 m-2">
             <FaShieldAlt className="text-blue-600 text-lg" />
             <p className="text-base text-gray-600">Secure</p>
           </div>
-          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 mx-auto">
+          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 m-2">
             <FaHandsHelping className="text-blue-600 text-lg" />
             <p className="text-base text-gray-600">Investment Assistance</p>
           </div>
-          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 mx-auto">
+          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 m-2">
             <FaWallet className="text-blue-600 text-lg" />
             <p className="text-base text-gray-600">Financial Security</p>
           </div>
-          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 mx-auto">
+          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 m-2">
             <FaChartLine className="text-blue-600 text-lg" />
             <p className="text-base text-gray-600">Personalized Plans</p>
           </div>
-          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 mx-auto">
+          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 m-2">
             <FaUserTie className="text-blue-600 text-lg" />
             <p className="text-base text-gray-600">Investment Advisors</p>
           </div>
-          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 mx-auto">
+          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 m-2">
             <FaLightbulb className="text-blue-600 text-lg" />
             <p className="text-base text-gray-600">Expert Insight</p>
           </div>
-          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 mx-auto">
+          <div className="bg-white rounded-xl p-4 flex items-center space-x-2 shadow-md text-left w-auto h-12 m-2">
             <FaCog className="text-blue-600 text-lg" />
             <p className="text-base text-gray-600">Highest Returns</p>
           </div>
